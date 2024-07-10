@@ -40,14 +40,45 @@
     </script>
 
 
-    <!-- This part restart counter of cards to start at n+1 -->
+
+<!-- This part restart counter of cards to start at n+1 -->
     <style>
-      /* body.number-title{
-        counter-reset: sectionCounter 1 subsectioncounter ;
-      } */
-      h1.page-title{
-        counter-reset: semanaCounter 1 sectionCounter  subsectionCounter;
-      }
+    .lista
+        {
+            counter-reset: listaCounter 0 sublistaCounter 1 subsublistaCounter 1 subsubsublistaCounter 1;
+        }
+        /* .sublista{
+            counter-reset: sublistaCounter 1  SubsublistaCounter;
+        } */
+        </style>
+
+    <style>
+            /* body.number-title
+            {
+            counter-reset: temaCounter 1 subsectioncounter ;
+            } */
+            body.fondo-body{
+              counter-reset: temaCounter 0 sectionCounter;
+            }
+
+            /* h1.page-number-title
+            {
+            counter-reset: sectionCounter 0;
+            }  */
+
+            h1.tema-number-title
+                {
+                counter-reset: sectionCounter 0;
+                } 
+
+            h1.number-title
+            {
+            counter-reset: subsectionCounter;
+            /* counter-reset: subsectionCounter; */
+            }
+
+
+
     </style>
 
     <!-- CSS -->
@@ -91,11 +122,14 @@
       <title>Semana 1</title>
       </head>  
 
-      <body class="fondo-body" ><h1 class="page-title"> Semana 1 </h1>   
+      <body class="fondo-body" >
+        
+         
+    <div class="nota-box"><h1 class="page-number-title"> Etapas en la solución de un problema </h1>   
 
 
-      <h1 class="page-subtitle">Etapas en la solución de un problema</h1>   
-      <div class="nota-box"><h1 class="number-title"> Introducción</h1>  
+      <!-- <h1 class="page-subtitle">Etapas en la solución de un problema</h1>    -->
+      <h1 class="number-title"> Introducción</h1>  
       <p>El proceso de <b>resolución de un problema</b> mediante una computadora comprende desde la <em>descripción inicial del
         problema</em> hasta el <em>desarrollo de un programa</em>  de computadora que lo resuelva.</b> 
       </p>

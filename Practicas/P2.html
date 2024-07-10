@@ -1,0 +1,271 @@
+
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+    
+
+   <!-- Next part is for new coomands -->
+   <script>
+    window.MathJax = {
+      tex: {
+        macros: {
+          sen: "\\operatorname{sen}",
+          seg: ["\\overrightarrow{#1}", 1]
+        },
+        tags: "ams" /* this part is for numbered equations */
+      }
+    };
+  </script>
+
+  <!-- This part is for using single $ for latex input, instead of \(\) -->
+  <script>
+      MathJax = {
+      tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+          },
+      svg: {
+          fontCache: 'global'
+      }
+  };
+    </script>
+
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+      /* body.number-title{
+        counter-reset: sectionCounter 1 subsectioncounter ;
+      } */
+      h1.page-title-practica{
+        counter-reset: semanaCounter 2 sectionCounter  subsectionCounter;
+      }
+    </style>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+    <!-- Top Menu  -->
+    
+          
+        <header class="main-header">
+        
+          <div class="logo_superior_umar">
+          <a href="https://www.umar.mx" target="_blank"><img src="../Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+          <div class="contenedor_titulo">
+          <div class="title">Introducción a la Programación</div>
+          <div class="subtitle">Universidad del Mar, campus Huatulco</div>
+          <div class="subsubtitle">Licenciatura en Actuaría </div>
+          <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
+      
+          </div>
+
+      
+        </header>
+
+        <nav class="top-nav">
+          <ul>
+            <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Home.html"> Inicio  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Informacion_General.html"> Información </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Notas.html"> Notas  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Practicas.html">Prácticas</a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Enlaces_externos.html"> Links </a> </li>
+          </ul>
+          </nav>
+       
+        
+        <!-- 
+          <nav class="small-nav" align=right>
+            <button onclick="myFunction()">Claro/Obscuro 
+          </nav> 
+        -->
+
+      <!-- This part is for title in tab-->
+            
+      <title>Práctica 1 </title>
+      </head>  
+
+
+
+  <body class="fondo-body" ><h1 class="page-title-practica"> Práctica 2 </h1>   
+
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo  de un algoritmo  que lea la base y la altura de un rectángulo y
+        calcule e imprima su área</p>
+      <!-- <button class="respButton hvr-grow ">  Solución       </button>
+          <div class="resp-box flexbox">
+            <div class="flexbox">  
+              <ol>
+              <li>Inicio</li>
+              <li></li>
+              <li>Fin</li>
+              </ol>
+            </div>
+          </div> -->
+    </div>
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo  de un algoritmo que lea dos números reales, 
+        calcule la suma, resta y multiplicación de dichos  números.</p>
+      <!-- <button class="respButton hvr-grow ">  Solución       </button>
+          <div class="resp-box flexbox">
+            <div class="flexbox">  
+              <ol>
+              <li>Inicio</li>
+              <li></li>
+              <li>Fin</li>
+              </ol>
+            </div>
+          </div> -->
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo de un algoritmo que lea un número entero positivo 
+        y determine e imprima si este es un número par o impar.
+      </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo de un algoritmo que lea una cantidad en dólares estadounidenses,
+        y convierta esa cantidad a pesos mexicanos.  Imprima el resultado.
+      </p>
+      <p><b>Observación</b> Considera el siguiente tipo de cambio: </p>
+        <center><p>$1$ dólar estadounidense= $\$20.15$ pesos mexicanos.</p></center>  
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo de un algoritmo que reciba el precio de un producto, y le aplique un impuesto del  $10\%$ de su costo original. Imprima el precio final del producto. 
+      </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo de un algoritmo que reciba el precio de un producto, y le aplique un descuento del  del $5\%$ sobre su costo original. Imprima el precio final del producto. 
+      </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p> Construye el diagrama de flujo de un algoritmo que reciba el precio de un producto, y le aplique un impuesto del  $15\%$ de su costo original en caso de que su precio sea menor que $\$ 2\,500$ pesos. Imprima el precio final del producto. 
+      </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo de un algoritmo que lea un número de dias (dias completos) y calcule e imprima el número de segundos que hay en el número de días dado.
+      </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
+      <p>Construye un diagrama de flujo de un algoritmo que reciba cierta cantidad de segundos (número real) 
+        introducida por teclado  e imprima su equivalente en semanas, días, horas, minutos y segundos.</p>        
+      </div>
+    
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo de un algoritmo que reciba como dato la longitud 
+        de un objeto expresados en pies,determine e imprima la longitud del objeto  en metros.</p>
+        
+      <p><b>Observación</b> Considera que: </p>
+        <center><p>$1$ pie =  $0.09290$ metros.</p></center>    
+      </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo de un algoritmo que reciba como dato el peso
+        de un objeto expresados en libras, determine e imprima la longitud del objeto en kilogramos.</p>
+        
+      <p><b>Observación</b> Considera que: </p>
+        <center><p>Una libra  =  $0.45359$ kilogramos.</p></center>    
+      </div>
+
+      <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+        <p>Construye el diagrama de flujo  de un algoritmo que  solicite el costo de un artículo
+          y la cantidad de dinero entregada por el cliente, calcule e imprima el cambio que
+          se debe entregar al cliente.
+        </p>
+      </div>
+
+
+      
+<!-- 
+      <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+        <p>Construye el diagrama de flujo de un algoritmo que recibe  como dato el radio de un círculo,
+          calcule e imprima tanto su área como el perímetro  de la  circunferencia.
+        </p>
+        <p><b>Sugerencia:</b> Toma el valor de $\pi$ como $3.141516$. </p>
+      </div>
+
+      <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo  de un algoritmo que al recibir como datos el radio y la altura de
+        un cilindro con tapas, calcule e imprima su área y su volumen.</p>
+  
+      <p><b>Observación:</b> Si  $V$ denota el volumen, $A$ el area,  $r$ el radio y   $h$ la altura del cilindro, 
+      <ul>
+        <li>El volumen de un cilindro se  calcula aplicando la siguiente fórmula:<br>
+      $$V= \pi \cdot r^2 \cdot h $$
+        </li>
+        <li>El area del cilindro se determina aplicando la formula:
+          $$ A= 2\cdot \pi \cdot r \cdot  h + 2\cdot \pi \cdot r^2$$
+        </li>
+        </ul>
+        Asume que $\pi \approx 3.141592$
+      </p>
+      </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Escribe el diagrama de flujo de un algoritmo que al recibir como dato un número de cuatro dígitos,
+        genere una impresión como la que se muestra a continuación: por ejemplo el número $6352$:<br>
+          <center>
+          $6$<br>
+          $3$<br>
+          $5$<br>
+          $2$
+        </center>
+      </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo de un algoritmo que, al recibir como dato el radio de una esfera,
+        calcule e imprima el área de la superficie y su volumen.</p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo que reciba como datos  de entrada el radio y la altura de un cilindro. 
+        Calcule el área total y el volumen del cilindro, luego imprima los resultados.
+      </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo  de un algoritmo  que reciba  tres enteros e imprima un mensaje
+        que indique si están o no en orden ascendente, imprima "Ordenados" en caso afirmativo o
+        "No ordenados" en caso contrario.
+      </p>
+    </div>
+
+ 
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo  de un algoritmo que solicite al usuario un número entero positivo menor que
+        $1\,000$ y determine cuantas unidades, decenas y centenas tiene el número. Luego, imprima la notacion desarrollada del número, 
+        i.e. si el usuario ingresa $897$, entonces se debe imprimir la siguiente expresión:
+        $$\text{ 897=8 x 10^2 + 9 x 10^1 + 7 x 10^0}$$
+  
+      </p>
+    </div>
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Escriba el  pseudocodigo  de un algoritmo  que imprima la suma de los primeros $100$ números 
+        naturales.
+      </p>
+    </div>
+     -->
+
+
+  </body>
+    

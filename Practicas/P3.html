@@ -1,0 +1,290 @@
+
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+    
+
+   <!-- Next part is for new coomands -->
+   <script>
+    window.MathJax = {
+      tex: {
+        macros: {
+          sen: "\\operatorname{sen}",
+          seg: ["\\overrightarrow{#1}", 1]
+        },
+        tags: "ams" /* this part is for numbered equations */
+      }
+    };
+  </script>
+
+  <!-- This part is for using single $ for latex input, instead of \(\) -->
+  <script>
+      MathJax = {
+      tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+          },
+      svg: {
+          fontCache: 'global'
+      }
+  };
+    </script>
+
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+      /* body.number-title{
+        counter-reset: sectionCounter 1 subsectioncounter ;
+      } */
+      h1.page-title-practica{
+        counter-reset: semanaCounter 3 sectionCounter  subsectionCounter;
+      }
+    </style>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+    <!-- Top Menu  -->
+    
+          
+        <header class="main-header">
+        
+          <div class="logo_superior_umar">
+          <a href="https://www.umar.mx" target="_blank"><img src="../Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+          <div class="contenedor_titulo">
+          <div class="title">Introducción a la Programación</div>
+          <div class="subtitle">Universidad del Mar, campus Huatulco</div>
+          <div class="subsubtitle">Licenciatura en Actuaría </div>
+          <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
+      
+          </div>
+
+      
+        </header>
+
+        <nav class="top-nav">
+          <ul>
+            <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Home.html"> Inicio  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Informacion_General.html"> Información </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Notas.html"> Notas  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Practicas.html">Prácticas</a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Enlaces_externos.html"> Links </a> </li>
+          </ul>
+          </nav>
+       
+        
+        <!-- 
+          <nav class="small-nav" align=right>
+            <button onclick="myFunction()">Claro/Obscuro 
+          </nav> 
+        -->
+
+      <!-- This part is for title in tab-->
+            
+      <title>Práctica 3 </title>
+      </head>  
+
+  <body class="fondo-body" ><h1 class="page-title-practica"> Práctica 3 </h1>   
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo  de un algoritmo  que lea un número entero positivo $n$ (validar entrada)
+        e invierta sus dígitos, imprime el número resultante.  
+      </p>
+      </div>
+ 
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo de un algoritmo que que implemente ciclos para determinar e  
+        todos los subconjuntos no vacíos del conjunto $\{ 1,2,3,4,5\}$. Imprime los subconjuntos adecuadamente.
+      </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo de un algoritmo que lea un número entero positivo $n$ (validar entrada)
+        y determine si $n$ es palindromo. Imprima un mensaje adecuado.  
+      </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo de un algoritmo que lea un número entero positivo $k$ 
+        (validar entrada) y encuentre el número entero positivo  $n$ más pequeño tal que
+        la suma de los $n$ primeros números naturales exceda el valor de $k$.
+      </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p> Construye el diagrama de flujo de un algoritmo que imprima la tabla de multiplicar del
+        $1, 2,\ldots ,9$ y $10$
+     </p>
+
+     <p>Cada tabla de multiplicar se debe imprimir de la siguiente manera. Por ejemplo
+       para la tabla de multiplicar del $3$, se debe imprimir  la tabla:
+       \begin{align*}
+         1 &\times 3 = 3\\
+         2 &\times 3 = 6\\
+         3 &\times 3 = 9\\
+         4 &\times 3 = 12\\
+         5 &\times 3 = 15\\
+         6 &\times 3 = 18\\
+         7 &\times 3 = 21\\
+         8 &\times 3 = 24\\
+         9 &\times 3 = 27\\
+         10 &\times 3 = 30\\
+       \end{align*}
+     </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Para encontrar el <b>Máximo Común Divisor</b> (<b>MCD</b>) de 
+        dos números enteros  positivos se puede implementar el <b>Algoritmo de Euclides</b>:</p>
+        <p> Dados  $a,b \in \mathbb{N}$  
+        con $a>b$ (si $a=b$, entonces $\mathrm{MCD}(a,b)=a$), se 
+        divide $a$ entre $b$, obteniendo el cociente $q_{1}$ y el resto 
+        $r_{1}$. Si $r_{1} \not= 0$ 
+        se divide $r_{1}$ entre $b$, obteniendo el
+        cociente $q_{2}$ y el resto $r_{2}$. 
+        Si $r_{2} \not= 0$, se divide $r_{1} $ entre $r_{2}$,
+        para obtener $q_{3}$ y $r_{3}$, y así sucesivamente.
+        Se continúa el proceso hasta que se obtiene un resto igual a  $0$. 
+        El resto anterior a cero es entonces
+        el Máximo Común Divisor de los números $a$ y $b$.</p>
+
+      <p>Se denota el Máximo Común Divisor de $a$ y $b$ por $\mathrm{MCD}(a,b)$.</p>
+    
+      <p>Construye un diagrama de flujo de un algoritmo que solicite al usuario dos números enteros positivos $a$
+        y $b$ (validar entradas), e implemente el algoritmo de Euclides para encontrar el Máximo Común Divisor 
+        de $a$ y $b$. Imprima el resultado.</p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
+      <p> Un número entero positivo $n$ es <b>perfecto</b> si  la suma de todos sus 
+        divisores positivos (excluido el mismo) es igual a $n$.El primer número perfecto 
+        es $6$, ya que los divisores positivos de $6$ son $1, 2, 3$ y $1 + 2 + 3 = 6$.</p>
+     
+      <p>Construye un diagrama de flujo de un algoritmo que encuentre los cinco primeros 
+        números perfectos</p>        
+      </div>
+    
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p> Un triangulo rectángulo puede tener lados que sean todos enteros. El conjunto de tres valores enteros
+        para los lados de un triángulo rectángulo se conoce como una <b>terna pitagórica</b>. Estos tres lados
+       deben satisfacer la relación de que la suma de los cuadrados de dos lados es igual al cuadrado de la
+       hipotenusa.
+     </p>
+      
+      
+      <p>Construye el diagrama de flujo de un algoritmo que encuentre e imprima  todas las ternas de Pitágoras 
+        para el cateto opuesto, cateto adyacente e hipotenusa de un triángulo rectangulo, todos ellos no 
+        mayores de $500$.</p>
+      </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo de un algoritmo que solicite al usuario  un número  entero 
+        positivo  impar $n$ (validar entrada) e imprima  una figura como la que se muestra a continuación.
+      </p>
+  
+      <p><b>Observación: $n$ es la longitud de las diagonales del rombo</b></p>
+      
+      <p>Por ejemplo si $n=9$:</p>
+      <pre>
+        *
+      * * *
+    * * * * *
+  * * * * * * *
+* * * * * * * * *
+  * * * * * * *
+    * * * * *
+      * * *
+        *
+      </pre>  
+      </div>
+
+      <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+        <p>Construye el diagrama de flujo  de un algoritmo que solicite al usuario  un número entero 
+          positivo $n$,  e imprima  una figura como la que se muestra a continuación: Por ejemplo 
+          para $n = 6$ 
+        </p>
+        <pre>
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+1 2 3 4 5 6
+1 2 3 4 5
+1 2 3 4 
+1 2 3 
+1 2 
+1
+    </pre>
+      </div>
+
+      <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+        <p>Construye el diagrama de flujo  de un algoritmo que que solicite al usuario  un número entero
+          positivo $n$, e imprima  una figura como la que se muestra a continuación: por ejemplo  
+          para $n = 7$ 
+        </p>
+      
+      <pre>
+1 2 3 4 5 6 7   7 6 5 4 3 2 1
+1 2 3 4 5 6       6 5 4 3 2 1
+1 2 3 4 5           5 4 3 2 1
+1 2 3 4               4 3 2 1
+1 2 3                   3 2 1
+1 2                       2 1
+1                           1
+      </pre>
+      </div>
+
+
+<!-- 
+      <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo  de un algoritmo que al recibir como datos el radio y la altura de
+        un cilindro con tapas, calcule e imprima su área y su volumen.</p>
+  
+      <p><b>Observación:</b> Si  $V$ denota el volumen, $A$ el area,  $r$ el radio y   $h$ la altura del cilindro, 
+      <ul>
+        <li>El volumen de un cilindro se  calcula aplicando la siguiente fórmula:<br>
+      $$V= \pi \cdot r^2 \cdot h $$
+        </li>
+        <li>El area del cilindro se determina aplicando la formula:
+          $$ A= 2\cdot \pi \cdot r \cdot  h + 2\cdot \pi \cdot r^2$$
+        </li>
+        </ul>
+        Asume que $\pi \approx 3.141592$
+      </p>
+      </div>
+
+      <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo de un algoritmo que, al recibir como dato el radio de una esfera,
+        calcule e imprima el área de la superficie y su volumen.</p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo que reciba como datos  de entrada el radio y la altura de un cilindro. 
+        Calcule el área total y el volumen del cilindro, luego imprima los resultados.
+      </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo  de un algoritmo  que reciba  tres enteros e imprima un mensaje
+        que indique si están o no en orden ascendente, imprima "Ordenados" en caso afirmativo o
+        "No ordenados" en caso contrario.
+      </p>
+    </div>
+     -->
+
+
+  </body>
+    

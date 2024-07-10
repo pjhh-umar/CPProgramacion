@@ -1,0 +1,268 @@
+
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="./main.js"></script>
+
+    
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams" /* this part is for numbered equations */
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+    .lista{
+        counter-reset: listaCounter 0 sublistaCounter 1 subsublistaCounter 1 subsubsublistaCounter 1;
+      }
+    /* .sublista{
+        counter-reset: sublistaCounter 1  SubsublistaCounter;
+      } */
+    </style>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="style.css" />
+    <!-- Top Menu  -->
+    
+          
+        <header class="main-header">
+        
+          <div class="logo_superior_umar">
+          <a href="https://www.umar.mx" target="_blank"><img src="./Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+          <div class="contenedor_titulo">
+          <div class="title">Introducción a la Programación</div>
+          <div class="subtitle">Universidad del Mar, campus Huatulco</div>
+          <div class="subsubtitle">Licenciatura en Actuaría </div>
+          <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
+      
+          </div>
+
+      
+        </header>
+
+        <nav class="top-nav">
+          <ul>
+            <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Home.html"> Inicio  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Informacion_General.html"> Información</a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Notas.html"> Notas  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Practicas.html">Prácticas</a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/CPProgramacion/Enlaces_externos.html"> Links </a> </li>
+          </ul>
+          </nav>
+        <!-- 
+          <nav class="small-nav" align=right>
+            <button onclick="myFunction()">Claro/Obscuro 
+          </nav> 
+        -->
+
+      <!-- This part is for title in tab-->
+            
+      <title>Introducción a la Programación</title>
+      </head>  
+          
+        <body class="fondo-body" >
+          
+        <div class="info-profesor-box">
+          <div class="informacion_profesor"> 
+            <div class="title_nombre">M. en C. Pablo Jorge Hernández Hernández</div>
+            <div class="subtitle_nombre">IIMA, Cubículo 5</div>
+          </div>
+        </div>
+
+      <div class="info-box" style = "font-family: 'Oldenburg', cursive;"><h1 class="title">Temario</h1>
+
+      <ol class="lista" >
+          <li><b>Etapas en la resolución de un problema</b></li>
+            <ol class="sublista">
+              <li>Definición o análisis del problema</li>
+              <li>Diseño del algoritmo</li>
+              <li>Transformación del algoritmo en un programa</li>
+              <li>Ejecución y validación del programa</li>
+            </ol>
+
+          <!-- <li><b><font size="5">Definición o análisis del problema</b></li>-->
+          <li ><b>Diseño de algoritmos</b></li>
+            <!-- <ol class="sublista"> -->
+              <!-- <li>Algoritmos</li> -->
+                 <ol class="sublista">
+              <!--    <li>Construcción de algoritmos</li>
+                  <li>Diagrama de flujo</li>
+                     <ol class="subsublista"> -->
+                      <!-- <li>Diagrama de flujo</li> -->
+                      <!-- <li>Pseudocódigo</li> -->
+                    <!-- </ol>-->
+                
+
+          <li>Diagramas de flujo</li>
+          <li>Construcción de diagramas de flujo</li>
+          <li>Reglas para la construcción de diagramas de flujo</li>
+            <!-- <ol class="sublista">
+              <li>Construcción de diagramas de flujo</li>
+              <li>Reglas para la construcción de diagramas de flujo</li>
+            </ol> -->
+          </ol> 
+
+      <!-- <li>Pseudocódigo</li>
+            <ul>
+              <li>Diseño de pseudocódigos</li>
+              <li>Reglas para el diseño de pseudocódigos</li>
+            </ul> -->
+
+          <li><b>Tipos de dato</b></li>
+            <ol class="sublista">
+              <li>Datos simples y estructurados</li>
+              <li>Datos númericos</li>
+              <li>Datos alfanúmericos</li>
+              <li>Datos lógicos</li>
+              <!-- <ol class="subsublista">
+              <li>Datos númericos</li>
+              <li>Datos alfanúmericos</li>
+              <li>Datos lógicos</li>
+            </ol> -->
+            </ol>
+
+          <li><b>Identificadores, constantes y variables</b></li>
+              
+          <li><b>Operadores</b></li>
+            <ol class="sublista">  
+              <li>Operadores aritméticos</li>
+              <!-- <li>Expresiones lógicas</li>-->
+              <li>Operadores relacionales</li>
+              <li>Operadores lógicos</li>
+            </ol>
+          <!-- <li>Bloque de asignación</li>-->
+            <!-- </ol> -->
+
+          <!-- <li><b><font size="5">Introducción a PSeInt</b></li> -->
+            <!-- <ol class="sublista"> -->
+              <!-- <li>Una introducción a PSeInt</li> -->
+              <!-- <li> Funciones matemáticas en PSeInt</li> -->
+              <li><b>Estucturas de control</b></li>
+                <ol class="sublista">
+                  <li>Estructuras secuenciales</li>
+                  <li>Estructuras selectivas</li>
+                    <ol class="subsublista">
+                      <li>If</li>
+                      <li>If-Else</li>
+                    </ol>
+                  <li>Estructuras repetitivas</li>    
+                    <ol class="subsublista">
+                      <li>For</li>
+                      <li>While</li>
+                      <li>Do-While</li>
+                    </ol>              
+                </ol>
+
+              <!-- <li><b>Estructuras selectivas</b></li>
+                <ol class="sublista">
+                  <li>If-Else</li>
+                  <li>Switch</li>
+                </ol>
+              <li><b>Estructuras repetitivas</b></li>
+                <ol class="sublista">
+                  <li>For</li>
+                  <li>While</li>
+                  <li>Do-While</li>
+                </ol> -->
+              <!-- <li><b><font size="5">Estructuras de control anidadas</b></li> -->
+              <!-- <li>Funciones para cadenas de texto</li>
+              <li>Funciones o subprocesos</li>
+              <li>Arreglos</li>
+                <ul>
+                  <li>Vectores</li>
+                  <li>Matrices</li>
+                </ul>
+              <li>Recursividad</li> -->
+            </ol>
+      </ol>
+<!-- 
+          <ol class="lista">
+            <li>Elemento 1</li>
+            <ol class="sublista">
+              <li>subelemento</li>
+              <ol class="subsublista">
+                <li>subelemento</li>
+                <li>subelemento</li>
+                <li>subelemento</li>
+                <li>subelemento</li>
+              </ol>
+              <li>subelemento</li>
+              <ol class="subsublista">
+                <li>subelemento</li>
+                <li>subelemento</li>
+                <li>subelemento</li>
+                <li>subelemento</li>
+              </ol>
+              <li>subelemento</li>
+              <li>subelemento</li>
+            </ol>
+            <li>Elemento 2</li>
+            <ol class="sublista">
+              <li>subelemento</li>
+              <li>subelemento</li>
+              <li>subelemento</li>
+              <li>subelemento</li>
+            </ol>
+            <li>Elemento 3</li>
+          </ol> -->
+        
+      
+      </div>
+
+        
+      <div class="info-box"  style = "font-family: 'Oldenburg', cursive;"><h1 class="title">Bibliografía</h1>    
+      <!-- <b><font size="5">Libros básicos</font></b> -->
+          <ol class="lista">
+            <li><b></b></li>
+            <li><b></b></li>
+            <li><b></b></li>
+          </ol>
+  
+        <!-- <b><font size="5">Libros de consulta</font></b>
+          <ol>
+            <li>Banner A. (2007) The Calculus Lifesaver, New Jersey: Princeton University Press.</li>
+            <li>Hasser B., La Salle P., Sullivan A. (1992) Análisis Matemático: Curso de Introducción, Vol. 1, México: Editorial Trillas.</li>
+            <li>Kuratowski K. (1970) Introducción al Cálculo, México: Limusa-Wiley.</li>
+            <li>Silverman R.A. (1989) Essencial Calculus with Applications., New York: Dover Publications, Inc.</li>
+            <li>Stewart J. (2008) Calculus, México: Thomson Brooks/Cole.</li>
+            <li>Thompson S.P. (2008) Calculus Made Easy, New York: Macmillan Company.</li>
+          </ol> -->
+  </div>
+
+
+      </body>
+  </html>

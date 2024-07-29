@@ -259,7 +259,7 @@ width: auto;
 } */
 
 .subsubtitle{
-  font-size: 150%;
+  font-size: 140%;
   /* font-family: "Muli"; */
   /* font-family: 'Bacasime Antique', serif; */
   /* font-family: 'Bacasime Antique', serif; */
@@ -498,7 +498,7 @@ h1.page-title{
 }
 
 h1.page-number-title{
-  font-size: 260%;
+  font-size: 205%;
   text-align: center;
   /* font-family: "Muli"; */
   font-family: 'Gelasio', serif;
@@ -523,7 +523,6 @@ h1.page-number-title::before{
 h1.page-subtitle{
   font-size: 220%;
   
- 
   /* font-weight: 600; */
   text-align: center;
   font-family: 'Hina Mincho', serif;
@@ -558,7 +557,7 @@ h1.tema-title{
 }
 
 h1.tema-number-title{
-  font-size: 200%;
+  font-size: 180%;
   /* text-align: left; */
   /* font-family: "Muli"; */
   font-family: 'Gelasio', serif;
@@ -585,7 +584,7 @@ h1.tema-number-title::before{
 }
 
 h1.block-number-title{
-  font-size: 200%;
+  font-size: 190%;
   text-align: center;
   /* font-family: "Muli"; */
   font-family: 'Gelasio', serif;
@@ -630,10 +629,10 @@ h1.tema-subtitle{
 
 
 h1.number-title{
-  font-size: 185%;
+  font-size: 170%;
   font-weight: 600;
-  margin-top: 4%;
-  margin-bottom: 4%;
+  margin-top: 1.5%;
+  margin-bottom: 2.5%;
   padding: 0%;
   content:" ";
   text-align: left;
@@ -660,8 +659,8 @@ h1.number-title::before{
 h2.number-title{
   font-size: 160%;
   font-weight: 600;
-  margin-top: 3.5%;
-  margin-bottom: 3.5%;
+  margin-top: 1.5%;
+  margin-bottom: 2.5%;
   padding: 0%;
   /* font-size: 185%; */
   font-family: 'Gelasio', serif;

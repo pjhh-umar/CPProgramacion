@@ -479,7 +479,7 @@ img.wmargen {
 body.card{
     /* counter-reset: temaCounter 1 sectionCounter  subsectionCounter; */
     counter-reset: listaCounter 1 sublistaCounter  subsublistaCounter;
-          }
+         }
 
 h1.page-title{
   font-size: 205%;
@@ -488,9 +488,9 @@ h1.page-title{
   font-family: 'Gelasio', serif;
   /* font-family: 'IM Fell English', serif; */
   /* content:" "; */
-  margin-top: 0%;
-  margin-bottom: 0%;
-  padding: 2%;
+  margin-top: 1%;
+  margin-bottom: 0.25%;
+  padding: 0%;
   width: 100%;
   /* color: rgba(255, 0, 0, 0.789); */
   /* color:  rgb(0,0,128);  */
@@ -505,9 +505,9 @@ h1.page-number-title{
   font-family: 'Gelasio', serif;
   /* font-family: 'IM Fell English', serif; */
   /* content:" "; */
-  margin-top: 0%;
+  margin-top: 1%;
   margin-bottom: 0%;
-  padding: 2%;
+  padding: 0%;
   width: 100%;
   /* color: rgba(255, 0, 0, 0.789); */
   /* color:  rgb(0,0,128);  */

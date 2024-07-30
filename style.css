@@ -329,11 +329,10 @@ width: auto;
   align-content: space-between;
 }
 
-
 h1.title{
-  font-size: 220%;
+  font-size: 190%;
   font-weight: 600;
-  margin-top: -1%;
+  margin-top: 0%;
   margin-bottom: 3.5%;
   padding: 0%;
   content:" ";
@@ -355,7 +354,7 @@ h1.title{
 }
 
 h2.title{
-  font-size: 200%;
+  font-size: 180%;
   font-weight: 600;
   /* padding: 2%; */
   /* font-family: "Muli"; */

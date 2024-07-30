@@ -1498,18 +1498,3 @@ ol li::marker{
   /* font-weight: bold; */
   content: " "
 }
-/* 
-h1.number-title-practica{
-  
-  font-family: 'Hina Mincho', serif;
-  
-  color: rgb(3, 89, 165); 
-}
-
-h1.number-title-practica:after{
-  
-  font-family: 'Hina Mincho', serif;  
-  counter-increment: sectionCounter;
-  content: " " counter(temaCounter)"."counter(sectionCounter) ".";
-}
-*/

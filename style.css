@@ -906,6 +906,7 @@ h1.number-title-practica::after{
   margin-bottom: 0px;
   margin-top: 0px;
   font-size: 20px;
+  text-align: left;
   /* width: 85%; */
   /* box-shadow: 1px 1px 5px 1px  rgb(31, 147, 201); */
 }
@@ -1080,8 +1081,8 @@ img {
   font-weight: 600;
   /* margin-bottom: 0px; */
   /* display: flex;*/
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 
 }
 

@@ -358,7 +358,7 @@
       
       <p><em><b>Análisis del problema:</b></em> Recordemos que un número entero positivo es primo si 
         tiene unicamente dos divisores: $1$ y $p$. Para resolver el problema consideremos dos 
-        variables auxiliares,  $divisor$ y $Contador$, la variable $Divisor$  la utilizaremos 
+        variables auxiliares,  $Divisor$ y $Contador$, la variable $Divisor$  la utilizaremos 
         para representar a los divisores de $p$, y la variable $Contador$ para llevar la cuenta de los divisores 
         que tiene $p$. Realizaremos  divisiones sucesivas para contar a los divisores de  $p$ y a partir de 
         la cantidad de divisores concluiremos si $p$ es primo o no. 
@@ -371,7 +371,7 @@
       
        <ol>
        <li>Inicio</li>
-       <li>Hacer $Contador$ <font size=5>&#8592;</font> 1 # El $1$ es divisor de cualquier número.</li>
+       <li>Hacer $Contador$ <font size=5>&#8592;</font> 1  <!-- # El $1$ es divisor de cualquier número.--></li>
        <li>Hacer $Divisor$ <font size=5>&#8592;</font> 2 </li>
        <li>Hacer $Residuo$ <font size=5>&#8592;</font> Residuo de dividir  $p$ entre $Divisor$ (sin decimales) </li>
        <li>Si $Residuo$  es igual a $0$, entonces hacer $Contador$ <font size=5>&#8592;</font> $Contador$ + 1. En caso 

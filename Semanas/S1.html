@@ -251,28 +251,21 @@
       
       <p><em><b>Datos:</b></em> &nbsp;  $n$ un entero positivo.</p>
       <p><em><b>Análisis del problema:</b></em> Para saber si $n$ es un número par o impar
-        tenemos que analizar el resto de dividir $n$ entre $2$.</p>
-    
-            <!-- <button class="respButton hvr-grow ">  Solución       </button>
-            <div class="resp-box flexbox">
-            <div class="flexbox">  
-            <ol>
-            <li>Inicio</li>
-            <li>Realizar la division entera de $n$ entre $2$</li>
-            <li>Si el resto de la división es cero, escribe que el número es par y ve al paso $4$; de lo contrario, 
-              escribe que $n$ es un número impar.</li>
-            <li>Fin</li>
-            </ol>
-            </div> -->
-          
-              </div>
-      
-          <!-- <ul>
-            <li>Calcular el m.c.m. o M.C.D.  de dos números.</li>
-            <li>Decidir si un número es primo.</li>
-            <li>Encontrar el numero máximo o mínimo de un conjunto finito de números.</li>
-          </ul>-->  
-          </p> 
+        tenemos que analizar el resto de dividir $n$ entre $2$.
+      </p>
+      <center>
+        <button class="respButton hvr-grow ">Solución</button>
+        <div class="resp-box flexbox">
+        <ol>
+        <li>Inicio</li>
+        <li>Realizar la division entera de $n$ entre $2$</li>
+        <li>Si el resto de la división es cero, escribe que el número es par y ve al paso $4$; de lo contrario, 
+          escribe que $n$ es un número impar.</li>
+        <li>Fin</li>
+        </ol>
+        </div> 
+    </center>
+     
     </div>
 
     <div class="nota-box"><h2 class="number-title"> Ejemplo</h2> 
@@ -282,24 +275,18 @@
         debemos determinar si $n$ se encuentra a la izquierda, a la derecha del cero en la recta númerica o bien 
         si es el precisamente igual a cero.
       </p>
-            <!-- <button class="respButton hvr-grow ">  Solución       </button>
-            <div class="resp-box flexbox">
-              <div class="flexbox">  
-            <ol>
-            <li>Inicio</li>
-            <li>Si $n>0$, entonces escribe que $n$ es un número positivo y ve al paso $5$ de lo contrario continua.</li>
-            <li>Si $n< 0$, entonces escribe que $n$ es un número negativo y ve al paso $5$ de lo contrario continua. </li>
-            <li>Si $n=0$, entonces escribe que $n$ es igual a cero. </li>
-            <li>Fin</li>
-            </ol>
-            </div>
-              </div>
-       -->
-          <!-- <ul>
-            <li>Calcular el m.c.m. o M.C.D.  de dos números.</li>
-            <li>Decidir si un número es primo.</li>
-            <li>Encontrar el numero máximo o mínimo de un conjunto finito de números.</li>
-          </ul>-->  
+      <center>
+        <button class="respButton hvr-grow ">Solución </button>
+        <div class="resp-box flexbox">
+        <ol>
+        <li>Inicio</li>
+        <li>Si $n>0$, entonces escribe que $n$ es un número positivo y ve al paso $5$ de lo contrario continua.</li>
+        <li>Si $n< 0$, entonces escribe que $n$ es un número negativo y ve al paso $5$ de lo contrario continua. </li>
+        <li>Si $n=0$, entonces escribe que $n$ es igual a cero. </li>
+        <li>Fin</li>
+        </ol>
+        </div>
+      </center> 
           
     </div>
 
@@ -311,30 +298,28 @@
           tiene unicamente dos divisores: $1$ y $p$. Para resolver el problema consideremos la
           variable auxiliar,  $Divisor$  para representar a los divisores de $p$,
           tenemos que realizar divisiones sucesivas para determinar si $p$ es primo. 
-          sumar sucesivas </p>
-  
-  
-      <!-- <button class="respButton hvr-grow ">  Solución       </button>
-      <div class="resp-box flexbox_">
-        <div class="flexbox_">  
-        
-         <ol>
-         <li>Inicio</li>
-         <li>Si $p$ es igual a $2$, entonces escribir "$p$ es primo" e ir al paso $8$. En caso contrario
-          continuar.
-         </li>
-         <li>Hacer $Divisor$ <font size=5>&#8592;</font> 2</li>
-         <li>Realiza la división entera de $p$ entre $Divisor$ </li>
-         <li>Si el residuo de la división es igual a $0$, escribir "$p$ no es primo" e ir al paso $8$. 
-          En caso contrario continuar. </li>
-         <li>Hacer $Divisor$ <font size=5>&#8592;</font> $Divisor$ +1 </li>
-         <li>Si $Divisor$ es igual a $p$ escribir "$p$ es primo" e ir al paso $8$. En caso contrario ir al paso 4 </li>
-         <li>Fin</li>
-        </ol>
-        </div>
-      </div> -->
+          sumar sucesivas.
+        </p>
+        <center>
+          <button class="respButton hvr-grow ">  Solución       </button>
+          <div class="resp-box flexbox">
+              <ol>
+                <li>Inicio</li>
+                <li>Si $p$ es igual a $2$, entonces escribir "$p$ es primo" e ir al paso $8$. En caso contrario
+                continuar.
+                </li>
+                <li>Hacer $Divisor$ <font size=5>&#8592;</font> 2</li>
+                <li>Realiza la división entera de $p$ entre $Divisor$ </li>
+                <li>Si el residuo de la división es igual a $0$, escribir "$p$ no es primo" e ir al paso $8$. 
+                En caso contrario continuar. </li>
+                <li>Hacer $Divisor$ <font size=5>&#8592;</font> $Divisor$ +1 </li>
+                <li>Si $Divisor$ es igual a $p$ escribir "$p$ es primo" e ir al paso $8$. En caso contrario ir al paso 4 </li>
+                <li>Fin</li>
+              </ol>
+            </div>
+        </center>
      
-      </p></div>
+    </div>
 
     <div class="nota-box"><h2 class="number-title"> Ejemplo</h2> 
       <p>Escriba un algoritmo para determinar si un número entero positivo $p$
@@ -349,29 +334,25 @@
         que tiene $p$. Realizaremos  divisiones sucesivas para contar a los divisores de  $p$ y a partir de 
         la cantidad de divisores concluiremos si $p$ es primo o no. 
       </p>
-<!--   
-  
-    <button class="respButton hvr-grow ">  Solución       </button>
-    <div class="resp-box flexbox">
-      <div class="flexbox">  
-      
-       <ol>
-       <li>Inicio</li>
-       <li>Hacer $Contador$ <font size=5>&#8592;</font> 1 # El $1$ es divisor de cualquier número.</li>
-       <li>Hacer $Divisor$ <font size=5>&#8592;</font> 2 </li>
-       <li>Hacer $Residuo$ <font size=5>&#8592;</font> Residuo de dividir  $p$ entre $Divisor$ (sin decimales) </li>
-       <li>Si $Residuo$  es igual a $0$, entonces hacer $Contador$ <font size=5>&#8592;</font> $Contador$ + 1. En caso 
-           contrario continuar. </li>
-       <li>Hacer $Divisor$ <font size=5>&#8592;</font> $Divisor$ +1 </li>
-       <li>Si  $Divisor$ es menor o igual que $p$, ir al paso $4$. En caso contrario, continuar. </li>
-       <li>Si  $Contador$ es igual a $2$, escribir "El número $p$ es primo". En caso contrario escribir 
-           "El número $p$ no es primo" </li>
-       <li>Fin</li>
-      </ol>
-      </div> -->
-      
-    </div>  
-  </div>
+      <center>
+        <button class="respButton hvr-grow ">  Solución       </button>
+        <div class="resp-box">
+          <ol>
+            <li>Inicio</li>
+            <li>Hacer $Contador$ <font size=5>&#8592;</font> 1  <!-- # El $1$ es divisor de cualquier número.--></li>
+            <li>Hacer $Divisor$ <font size=5>&#8592;</font> 2 </li>
+            <li>Hacer $Residuo$ <font size=5>&#8592;</font> Residuo de dividir  $p$ entre $Divisor$ (sin decimales) </li>
+            <li>Si $Residuo$  es igual a $0$, entonces hacer $Contador$ <font size=5>&#8592;</font> $Contador$ + 1. En caso 
+                contrario continuar. </li>
+            <li>Hacer $Divisor$ <font size=5>&#8592;</font> $Divisor$ +1 </li>
+            <li>Si  $Divisor$ es menor o igual que $p$, ir al paso $4$. En caso contrario, continuar. </li>
+            <li>Si  $Contador$ es igual a $2$, escribir "El número $p$ es primo". En caso contrario escribir 
+                "El número $p$ no es primo" </li>
+            <li>Fin</li>
+          </ol>
+        </div>  
+      </center>
+    </div>
 
   <div class="nota-box"><h2 class="number-title">Observación</h2>
     <p> No existen reglas específicas que nos permitan resolver un problema. Sin embargo, es posible  ofrecer un
@@ -382,9 +363,8 @@
     <p>
       Las dos <b>herramientas más comúnmente utilizadas para diseñar algoritmos</b> son: <b><em>diagramas de flujo</em></b>
       y <b><em>pseudocódigos</em></b>. De hecho, una de las mejores formas de <b>aprender  a programar</b> es empezar por los <em>diagramas de flujo</em> y 
-      <em>pseudocodigo</em>. Ambos facilitan e inducen  la resolucion de problemas  mediante <em>algoritmos</em></p>
-      
-        
+      <em>pseudocodigo</em>. Ambos facilitan e inducen  la resolucion de problemas  mediante <em>algoritmos</em>
+    </p>        
     </div>
 
         </body>

@@ -46,13 +46,33 @@
     
     <!-- This part restart counter of cards to start at n+1 -->
     <style>
-      /* body.number-title{
-        counter-reset: sectionCounter 1 subsectioncounter ;
+      /* body.number-title
+      {
+      counter-reset: temaCounter 1 subsectioncounter ;
       } */
-      h1.page-title{
-        counter-reset: semanaCounter 2 sectionCounter  subsectionCounter;
+      body.fondo-body{
+        counter-reset: temaCounter 1 sectionCounter;
       }
-    </style>
+
+      /* h1.page-number-title
+      {
+      counter-reset: sectionCounter 0;
+      }  */
+
+      h1.tema-number-title
+          {
+          counter-reset: sectionCounter 0;
+          } 
+
+      h1.number-title
+      {
+      counter-reset: subsectionCounter;
+      /* counter-reset: subsectionCounter; */
+      }
+
+
+
+</style>
 
     <!-- CSS -->
 
@@ -102,9 +122,9 @@
 
 
 
-    <body class="fondo-body" ><h1 class="page-title"> Semana 2 </h1>
+    <body class="fondo-body" ><h1 class="page-number-title"> Semana 2 </h1>
       
-    <h1 class="page-subtitle">Diseño de algoritmos</h1>
+    <h1 class="tema-number-title">Diseño de algoritmos</h1>
 
     <div class="nota-box"><h1 class="number-title"> Diagramas de flujo</h1>
       <p>
@@ -125,7 +145,7 @@
       
     <div class="nota-box"><h2  class="number-title"> Definición</h2>
       <p>Un <b>diagrama de flujo</b> es una representación gráfica de un algoritmo. Los símbolos utilizados
-        satisfacen las recomendaciones de la <b>International Organization for Standardization</b> (ISO) y el <b>American National Standards Institute</b> (<b>ANSI</b>).
+        satisfacen las recomendaciones de la <b>International Organization for Standardization</b> (<b>ISO</b>) y el <b>American National Standards Institute</b> (<b>ANSI</b>).
       </p>
     </div>
     
@@ -174,7 +194,7 @@
     </p>
     
     <p>        
-      <table class="info">        
+      <table class="tabla-funciones">        
         <thead>
         <tr>
           <th colspan="2"><font size="4">Símbolos utilizados en diagramas de flujo</font></th>
@@ -186,7 +206,7 @@
         </thead>
           <tbody>
           <tr>
-            <td><img src="../Imagenes/Simbolo_inicio_fin.JPG" alt="", width="auto" height="auto"></td>
+            <td><img src="../Imagenes/Simbolo_inicio_fin.JPG" alt="", width="100%" height="auto"></td>
             <td> Se utiliza para marcar el <b>inicio</b> y el <b>fin</b> del diagrama de flujo.</td>
           </tr>
     

@@ -17,7 +17,7 @@
 
     
 
-   
+
     <!-- Next part is for new coomands -->
     <script>
       window.MathJax = {
@@ -31,6 +31,7 @@
       };
     </script>
 
+    
     <!-- This part is for using single $ for latex input, instead of \(\) -->
     <script>
         MathJax = {
@@ -538,8 +539,8 @@
         Esto es, si tenemos en una expresión más de un operador, 
         debemos aplicar primero el operador de mayor jerarquía, resolver esa operación y 
         así sucesivamente. Es importante señalar que el operador $( )$ es un 
-        <b>operador asociativo</b> que tiene la prioridad más alta en
-        cualquier lenguaje  de programación. 
+        <b>operador asociativo</b> que <b>tiene la prioridad más alta en
+        cualquier lenguaje  de programación</b>. 
       </p>
     
       <p>En la siguiente tabla se presenta la jerarquía de los operadores aritméticos:</p>
@@ -556,13 +557,13 @@
           </thead>
             <tbody>
             <tr >
-              <td><center><b>**, ^</b></center></td>
+              <td><center><b>^</b></center></td>
               <td rowspan="3"><center>Mayor <br> <font size="8"> &darr;</font> <br> Menor</center></td>
               <td>Potencia</td>
             </tr>
     
             <tr>
-              <td><center><b>*, /, MOD, DIV</b></center></td>
+              <td><center><b>*, /, mod, //</b></center></td>
               <td>Multiplicación, división, módulo, división entera </td>
             </tr>
     
@@ -583,8 +584,8 @@
             esta subexpresión. Si las subexpresiones se encuentran anidadas por paréntesis, 
             primero se evalúan las subexpresiones que se encuentran en el último nivel de anidamiento.
             </li>
-          <li>Los operadores aritméticos se aplican teniendo en cuenta la jerarquía y de 
-            izquierda a derecha.</li>
+          <li>Los operadores aritméticos se aplican teniendo en cuenta la <b>jerarquía y de 
+            izquierda a derecha</b>.</li>
         </ol>
     
         </p>
@@ -596,7 +597,7 @@
         <p>Las <b><em>expresiones lógicas</em></b> o <b><em>booleanas</em></b>, llamadas así en honor del
           matemático  <b><em>George Boole</em></b>, están constituidas por números, constantes o variables y <b>operadores
           lógicos</b> o  <b>relacionales</b>. 
-          El valor que pueden tomar estas expresiones es el de  <b>verdadero</b> o <b>falso</b>.
+          El valor que pueden tomar estas expresiones es el de  <b>Verdadero</b> (<b>True</b>) o <b>Falso</b> (<b>False</b>).
         
           Se utilizan frecuentemente en las <b><em>estructuras selectivas</em></b> 
           (dependiendo del resultado de la evaluación
@@ -612,7 +613,7 @@
             Los <b>operadores relacionales</b> son operadores que permiten <b>comparar dos operandos</b>. Los operandos pueden 
             ser números, alfanuméricos, constantes o variables. Las constantes o variables, a su vez, pueden ser
             de tipo entero, real, caracter o cadena de caracteres. <b>El resultado de una expresión con operadores 
-            relacionales es verdadero o falso.</b>
+            relacionales es Verdadero (<b>True</b>) o Falso (<b>False</b>).</b>
           </p>
       
           <p>
@@ -687,7 +688,8 @@
       <div class="nota-box"><h1 class="number-title"> Operadores lógicos</h1>
       
       <p>Los <b>operadores lógicos</b> son operadores que permiten formular condiciones complejas a partir
-         de condiciones simples. Los operadores lógicos son de <b>conjunción</b> ( <b>Y</b>), <b>disyunción</b> (<b>O</b>) y <b>negación</b> (<b>NO</b>).
+         de condiciones simples. Los operadores lógicos son de <b>Conjunción</b> ( <b>Y</b>), <b>Disyunción</b> (<b>O</b>)
+        y <b>Negación</b> (<b>NO</b>).
       </p>
       </div>
 
@@ -730,8 +732,7 @@
             <tr>
               <td><center><b>O, OR</b></center></td>
               <td><center>P O Q</center></td>
-              <td><center>P o Q<br>
-                 o  P o Q o ambas</center></td>
+              <td><center>(P o Q) o  (P o Q) o ambas</center></td>
               
             </tr>
     
@@ -862,7 +863,7 @@
             <li>El operador $()$ es un operador asociativo que tiene la prioridad más
               alta en  cualquier lenguaje de programación. Por otra parte, debemos señalar que en  ciertos lenguajes,
               las prioridades de los operadores se manejan en forma diferente. Por ejemplo, el operador lógico 
-              de negación no en el lenguaje de  programación C tiene la prioridad más alta después del operador 
+              de negación NO en el lenguaje de  programación C tiene la prioridad más alta después del operador 
               asociativo.</li>
             <li>  No se puede realizar la comparación entre un valor lógico y un numérico, 
               utilizando un operador relacionales

@@ -50,7 +50,7 @@
         counter-reset: sectionCounter 1 subsectioncounter ;
       } */
       h1.page-title{
-        counter-reset: semanaCounter 5 sectionCounter  subsectionCounter;
+        counter-reset: semanaCounter 7 sectionCounter  subsectionCounter;
       }
     </style>
 
@@ -98,253 +98,251 @@
 
       <!-- This part is for title in tab-->
             
-      <title>Semana 5</title>
+      <title>Semana 7</title>
       </head>  
 
 
 
-    <body class="fondo-body" ><h1 class="page-title"> Semana 5 </h1>
-      
-    <h1 class="page-subtitle"> Introducción a PseInt</h1> 
+    <body class="fondo-body" ><h1 class="page-title"> Semana 7 </h1>
 
-      <div class="nota-box"><h1 class="number-title"> ¿Qué es PseInt?</h1>
-        <p>El término <em><b>PSeInt</b></em> es la abreviatura de <b>Pseudocode Interpreter</b>, en español, <b><em>Intérprete de Pseudocódigo</em></b>.
-          Este programa fue  creado como proyecto final para la materia  Programación 1 de la carrera Ingeniería en Informática de la Facultad
-          de  Ingeniería y Ciencias Hídricas de la Universidad Nacional del Litoral, de Argentina del en aquel momento estudiante 
-          y hoy docente <b>Pablo Novara</b>.
-          <!--  -->
+
+    <!-- <h1 class="page-subtitle"><p>Estructura condicional:
+        Según (<em>switch</em>)</p>
+    </h1>  -->
+       
+    <div class="nota-box"><h1 class="number-title"> Estructura condicional:
+      Según (<em>switch</em>)</h1>
+      <p>La estructura condicional <em>if</em> nos proporciona, únicamente dos resultados,
+        uno para cuando es verdadero y otro para cuando es falso. La estructura <em>según</em>,
+        por su parte nos permite elegir entre muchas opciones.</p>
+
+        <p>
+
         </p>
-
-        <p>PSeInt le ayuda a escribir algoritmos utilizando un pseudo-lenguaje simple, intuitivo y en español.</p>
-
-        <p>El objetivo es permitir al estudiante centrar la atención en los conceptos fundamentales que debe aprender, 
-        sin perder tiempo en los detalles de un lenguaje o del uso de un <em>intérprete</em> o <em>compilador</em>.</p>
-
-        <!-- <p>El programa utiliza pseudocódigo, una descripción de un algoritmo computacional,
-          cuya principal misión es que el programador pueda centrarse en los aspectos
-          lógicos de la programación, dejando el apartado técnico para cuando el
-          programador vea la sintaxis de un lenguaje de programación real.</p>
-            -->
-
-      </div>
-
-      <div class="nota-box"><h2 class="number-title"> Caracteristicas</h2>
-          <ol>
-          <li>Es <b>software libre</b>. Está disponible su código fuente, y con instrucciones para ejecutarlo, de modo
-            que si sabemos C++ podremos modificarlo, para personalizarlo y/o corregirlo.</li><br>
-          <li>Posee <b>previsualización y exportación</b> a C, C++, Java, Python y otros lenguajes para
-            que podamos ver el mismo código implementado en un lenguaje de
-            programación real, lo que ayuda a aprender estos y otros lenguajes</li><br>
-          <li> Es un <b>software multiplataforma</b>, está disponible para Windows (a partir de
-            Windows XP), GNU/Linux y Mac, de modo que podemos seguir utilizándolo
-            pese a que eventualmente tengamos que utilizar otro sistema operativo que
-            no sea Windows. También hay un desarrollo independiente para Android, que
-            usa la sintaxis estricta de PSeInt.</li><br>
-          </ol>
-      </div>
-
-      <div class="nota-box"><h2 class="number-title"> Observación:</h2>
-         El perfil  <b>estricto</b>,  es el más parecido a
-          un lenguaje de programación real, se debe respetar al pie de la letra el
-          formato del pseudocódigo propuesto por Novara.<!-- La sintaxis personalizada
-          pero basada en la estricta la usaremos para ejecutar ciertos códigos que
-          requieren un poco más flexibilidad a la hora de ejecutarse. A menos que se
-          indique que se deba personalizar la sintaxis estricta, se utilizará la sintaxis
-          estricta sin personalizaciones.--></p>
-      </div>
-
-      <div class="nota-box"><h1 class="number-title"> Declaracion de variables y asignacion de valores</h1>
-        <p>Recordemos que una <b>variable</b> es un espacio de la memoria donde se guarda información. 
-          La información que se guarda en la variable puede ser de diversos tipos y puede ir cambiando 
-          a lo largo del programa. A la variable hay que darle un nombre para identificarla, y ese nombre 
-          estará formado solo por letras, números y el guion bajo únicamente; no debe contener espacios 
-          ni operadores, ni palabras claves del lenguaje. Identificadores de 
-          variable correctos podrían ser: 
-          $$\text{nombre_usuario, fecha_2018, edad, A, X, suma,...}$$</p>
-          </p>
-      </div>
-
-    <div class="nota-box"><h2 class="number-title"> Tipos de datos en PSeInt</h2>
-      <p>
-        Cada variable tiene un <b>tipo de dato</b> asociado, por lo que siempre guardará el mismo tipo de dato. 
-        PseInt cuenta con los siguientes tipos de datos:
-      </p>
-      <p>
-        <ul>
-          <li><b>Real</b>: Una variable de tipo real admite datos numéricos, que pueden ser enteros y/o
-            con punto decimal.
-          </li>
-          <li><b>Entero</b>: Es una especialización que sólo permite almacenar valores enteros; cualquier
-            valor no entero que se lea o asigne en una variable de este tipo será truncado.
-          </li>
-          <li><b>Cadena</b>: Es una secuencia ordenada (de longitud arbitraria, aunque finita) de
-            elementos que pertenecen a un cierto lenguaje formal o alfabeto análogas a una fórmula o a
-            una oración
-          </li>
-          <li> <b>Carácter</b>: Las variables de caracteres se usan para almacenar valores alfabéticos, en
-            particular letras solas.
-          </li>
-          <li><b>Lógico:</b> Una variable de tipo LOGICO sólo puede tomar los valores VERDADERO y
-            FALSO, pero cuando se lee una variable ya definida como lógica, el usuario puede ingresar
-            también las abreviaciones <b>V</b> y <b>F</b>, o $0$ y $1$.
-          </li>
-        </ul>
-      </p>
     </div>
 
+    <div class="nota-box"><h2 class="number-title"> Características</h2>
+      <ol>
+        <li>Esta estructura nos permite ejecutar una de entre un conjunto de alternativas,
+          con base en el valor almacenado en una <b>variable de tipo númerico</b> 
+          llamada <b><em>selector</em></b>.</li>
+        <li>No tiene sentido usar un selector para una variable como por ejemplo sexo ($1$; hombre, $2$: Mujer),
+           en este caso es más óptimo y eficiente la estructura selectiva $if$ pero para una variable como 
+           carrera (1: 'Economía', 2: 'Turismo'. 3: 'Comunicación', 4:'Relaciones internacionales', 5: 'Actuaria') 
+           es más recomendable  usar un selector.</li>
+        <li>El selector debe ser una variable que toma más de dos valores  enteros $1, 2, 3 ,\ldots N$ y
+           dependiendo de ese valor se ejecute ciertas instrucciones. 
+        </li>
+        <li>Se evalua el contenido del <em>selector</em> y se ejecuta la secuencia de instrucciones asociadas 
+          con dicho valor. </li>
+        <li>La secuencia de instrucciones ejecutada por una instrucción <em>Según</em> depende del valor de
+           una variable numérica.</li>
+        <li>Cada opción está formada por uno o más números separados por comas.</li>
+        <li>Opcionalmente, se puede agregar una opción final, llamada <b><em>De otro modo</em></b>, cuya secuencia 
+          de instrucciones asociada se ejecutara sólo si el valor almacenado en la variable no coincide 
+          con ninguna de las opciones anteriores.</li>
+      </ol>
+    </div>
 
-      <div class="nota-box"><h2 class="number-title"> Sintaxis declaración de variables</h2>
+    <div class="nota-box"><h2 class="number-title"> Sintaxis sentencia <em>según</em></h2>
+
+      <p>En general, la sintaxis de la sentencia <em>según</em> es:</p>
+
+      <p>
+        <div class="flexbox">
+            <img src="../Imagenes/estructura_segun_general.png" alt="", width="70%" height="auto">
+        </div>
+      </p>
+
+      <p>Donde <em>selector</em> es una variable de tipo númerico y $n_1,n_2,n_3,n_4,n_5, n_6$ son 
+        valores que toma la variable <em>selector</em></p>
+      <p>Enseguida se presenta un ejemplo más especifico sobre el uso de la sentencia <em>según</em> :</p>
       
-    <p>Una variable que guarde un número no podrá guardar después otro tipo que no sea un número. Para declarar
-      una variable se utiliza la palabra clave <b><em>Definir</em></b>. La sintaxis para definir 
-      variables en PseInt de algún tipo de dato específico es:
-    </p>
-
       <p>
         <div class="flexbox">
-            <img src="../Imagenes/Definicion_variables.png" alt="", width="45%" height="auto">
+          <img src="../Imagenes/estructura_segun.png" alt="", width="70%" height="auto">
         </div>
       </p>
+     </div>
 
-      <p>También es posible declarar variables de distintos tipos en una única instrucción,  
-        separando por $;$ cada declaración:</p>
-      <p>
-        <div class="flexbox">
-            <img src="../Imagenes/Definicion_variables_.png" alt="", width="105%" height="auto">
-        </div>
-      </p>
-
-      <p>A veces es necesario definir más de una variable de un mismo tipo, esto se puede hacer sin 
-        tener que definir a cada una de ellas por separado de la siguiente manera:  </p>
-      <p>
-        <div class="flexbox">
-            <img src="../Imagenes/Definicion_variables__.png" alt="", width="50%" height="auto">
-        </div>
-      </p>
-      </div>
-
-      <div class="nota-box"><h2 class="number-title"> Sintaxis asignación de variables</h2>
-
-      <p>Una vez declarada la variable se le puede asignar un valor:</p>
-
-      <p>
-        <div class="flexbox">
-            <img src="../Imagenes/Asignacion_variables.png" alt="", width="70%" height="auto">
-        </div>
-      </p>
-
-      <p>También es posible recibir el valor (leer) por teclado:</p>
-
-      <p>
-        <div class="flexbox">
-            <img src="../Imagenes/Lectura_datos.png" alt="", width="70%" height="auto">
-        </div>
-      </p>
-
-
-     
+    <div class="nota-box"><h1 class="number-title"> Práctica</h1>
+      <p>Construye el  diagrama de flujo de un algoritmo que  solicite al usuario un 
+        número entero $n \in \{0,1,2,3,4,5,6\}$ e imprima el nombre del día de la semana correspondiente. 
+        Asume que $0$ corresponde a "Lunes" y $6$ a "Domingo", si en numero ingresa no pertenece al conjunto
+        $\{0,1,2,3,4,5,6\}$ imprimir el mensaje "El número ingresado no corresponde a un día de la semana" 
+      </p>       
     </div>
 
-    <div class="nota-box"><h1 class="number-title"> Funciones matemáticas incorporadas en PSeInt</h1>
-  
-    <center>        
-      <table class="info"  style="width:60%">
-        
-    <!-- <caption><b><font size="4">Funciones matemáticas</font></b></caption>-->
-        <thead>
-        <tr>
-          <th style="width:100px"><center><b>Nombre de la función</b></center></th>
-          <th style="width:130px"><center><b>Descripcion</b></center></th>
-        </tr>
-        </thead>
-          <tbody>
-          <tr >
-            <td><center>$\mathrm{abs}(x)$</center></td>
-            <td><center>Devuelve el valor absoluto de $x$</center></td>
-            
-          </tr>
 
-          <tr>
-            <td><center>$\mathrm{trunc}(x)$</center></td>
-            <td><center>Devuelve la parte entera de $x$</center></td>
-         
-          </tr>
-
-          <tr>
-            <td><center>$\mathrm{redon}(x)$</center></td>
-            <td><center>Redondea $x$ a su entero más cercano</center></td>
-           
-          </tr>
-
-          <tr>
-            <td><center>$\mathrm{rc}(x)$</center></td>
-            <td><center>Calcula la raíz cuadrada de $x$</center></td>
-          </tr>
-
-          <tr>
-            <td><center>$\mathrm{azar}(n)$</center></td>
-            <td><center>retorno un número aleatorio entre $0$ y $n-1$ </center></td>
-          </tr>
-
-          <tr>
-            <td><center>$\mathrm{sen}(x)$</center></td>
-            <td><center>Calcula el Seno de $x$ en radianes</center></td>
-          </tr>
-
-          <tr>
-            <td><center>$\mathrm{cos}(x)$</center></td>
-            <td><center>Calcula el Coseno de $x$ en radianes</center></td>
-          </tr>
-
-          <tr>
-            <td><center>$\mathrm{tan}(x)$</center></td>
-            <td><center>Calcula el logaritmo natural (base $e$) de $x$</center></td>
-          </tr>
-
-          <tr>
-            <td><center>$\mathrm{PI}$</center></td>
-            <td><center>Equivale a $3.1415926$</center></td>
-          </tr>
-          
-        </tbody>
-        </table>
-      </center>
+    <div class="nota-box"><h1 class="number-title"> Práctica</h1>
+      <p>Construye el  diagrama de flujo de un algoritmo que  solicite al usuario un 
+        número entero $n \in \mathbb{Z}$ y determine la clase de <a href="https://es.wikipedia.org/wiki/Aritmética_modular" target="_blank">  equivalencia módulo $7$</a> (Vea también <a href="https://es.wikipedia.org/wiki/Congruencia_(teoría_de_números)" target="_blank"> relación de  congruencia</a>) a la que pertenece e 
+        imprima el nombre del día de la semana correspondiente. Asume que $0$ corresponde a "Lunes" y
+        $6$ a "Domingo". 
+      </p>       
     </div>
 
-    <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que lea dos enteros y calcule e imprima su producto, cociente
-         y el resto cuando el primero se divide por el segundo.</p>
-      </div>
-      
-    <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que lea un número entero  y determine e imprima si el 
-      número es par o impar. 
-    </p>
-    </div>
-
-    <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que lea un número entero  y determine  si este 
-        número se encuentra entre $-100$ y $100$ (pudiendo ser $-100$ y $100$ incluso). 
+    <div class="nota-box"><h1 class="number-title"> Práctica</h1>
+      <p>Construye el  diagrama de flujo de un algoritmo que solicite al usuario dos números 
+        enteros $x,y$, calcule e imprima  el valor de la función $f(x,y)$ bajo  la 
+        siguiente regla de correspondencia:
+          \begin{equation}f(x,y) :=
+          \begin{cases}
+          100x,&  \text{ si } y=1, \\
+          100^x,& \text{ si } y=2,  \\
+          x/100,& \text{ si } y=3, \\
+          0    ,&  \text{ para cualquier otro valor de } y \\
+          \end{cases} 
+          \end{equation}
       </p>
+      <p>Imprimir $f(x,y)= \text{valor_resultante}$</p>
     </div>
 
-    <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que lea la edad de una persona y determine e imprima si la
-        persona es mayor de edad.
+    <div class="nota-box"><h1 class="number-title"> Práctica</h1>
+      <p>Construye el diagrama de flujo de un algoritmo que lea tres números enteros y los imprima 
+        en orden ascendente.
       </p>
-    </div>
-
-    <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que lea un número entero y determine e imprima si el 
-        número es positivo e impar. 
-      </p>
-    </div>
-
-    <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-     <p>Construye el diagrama de flujo de un algoritmo que lea un número entero  y determine e imprima si el 
-      número es multiplo de $9$. 
-    </p>
     </div>
     
+    <div class="nota-box"><h1 class="number-title"> Práctica</h1>
+      <p>Construye el  diagrama de flujo de un algoritmo que  solicite el salario de un profesor del SUNEO,
+        y calcule el incremento del salario de acuerdo con el siguiente criterio e imprima el nuevo salario
+        del profesor.
+        \begin{equation}
+        \begin{cases}
+        Salario < \$12\,000,&  \text{ Incremento del } 15\%. \\
+        \$12\,000 \leq Salario < \$15\,000,& \text{ incremento del } 12\%. \\
+        \$15\,000 \leq Salario < $18\,000,& \text{ incremento del } 8\%. \\
+        $18\,000  \leq  Salario,&  \text{ incremento del } 5\%.\\
+        \end{cases} 
+        \end{equation}
+      </p>       
+    </div>
+
    
+      
+    <div class="nota-box"><h1 class="number-title"> Práctica</h1>
+      <p>Construye el diagrama de flujo  de un algoritmo  que reciba los coeficientes $a,b,c$ de una ecuación cuadratica: 
+        $ax^2 + bx +c$ y determine si tiene si tiene dos soluciones reales, una solución real o bien ninguna solución real.
+      </p>
+      <p><b>Hint:</b> Utiliza el discrminante de la ecuación cuadrática. </p>
+    </div> 
+
+
+    <div class="nota-box"><h1 class="number-title"> Práctica</h1>
+        <p> En la compañía telefónica “chismefón”. Cuando
+          se realiza una llamada, el cobro es por el tiempo que ésta dura, de tal
+          forma que los primeros cinco minutos cuestan $\$1.00$ cada minuto, los siguientes
+          tres, $\$80$ centavos cada minuto, los siguientes dos minutos, $\$70$ centavos 
+          cada uno, y despues del décimo minuto, $\$50$ centavos cada minuto.
+        </p>
+    
+      <p>Además, se carga un impuesto sobre el monto por la duración de la llamada del  $3\%$ cuando es domingo, 
+        y en cualquier otro día, en turno matutino,  se aplica un impuesto del $15 \%$ , y en turno vespertino del
+        $10\%$ sobre el monto a pagar por la duración de la llamada. Construye el diagrama de flujo 
+        de un algoritmo que solicite el número de minutos que duro la llamada, el día que se realizo 
+        y si fue hecha en el turno matutino o vespertino, luego determine cuánto debe pagar 
+        por cada concepto una persona que realiza una llamada e imprima el pago total.
+      </p>
+    </div>
+  
+  <h1 class="page-subtitle">
+    <p>Estructuras de repetición:<br>
+      Mientras (<em>while</em>), repetir-hasta (<em>do-while</em>),
+      para (<em>for</em>)</p>
+  </h1> 
+
+  <div class="nota-box"><h1 class="number-title"> Ciclo <em>mientras</em> (<em>While</em>) y ciclo <em>para</em> (<em>for</em>) </h1>
+    <p>En los ciclos <em>mientras</em> y  <em>para</em> la <b>condición se evalua antes de ingresar al bucle y si esta es verdadera
+      entonces ingresa al ciclo en caso contrario se sale</b>. Por lo que si la condición es inicialmente falsa, el bucle no 
+    se ejecuta ninguna vez. Para ambos casos, el bucle se repite mientras la condición sea verdadera.     </p>
+  </div>
+
+      <div class="nota-box"><h2 class="number-title"> Sintaxis ciclo <em>mientras</em> (<em>While</em>)</h2>  
+      <p>La el ciclo <em>mientras</em> ejecuta una secuencia de instrucciones mientras una condición sea verdadera.
+      </p>    
+      <p>
+        <div class="flexbox">
+            <img src="../Imagenes/Sintaxis_ciclo_mientras.png" alt="", width="30%" height="auto">
+        </div>
+      </p>
+      <p>Si la condición resulta verdadera, se ejecuta una vez la secuencia de instrucciones que forman el
+        cuerpo del ciclo. Al finalizar la ejecución del cuerpo del ciclo se vuelve a evaluar la condición y, 
+        si es verdadera, la ejecución se repite. Estos pasos se repiten mientras la condición sea verdadera
+      </p>
+
+      <p>Las instrucciones del cuerpo del ciclo pueden no ejecutarse nunca, si al evaluar por primera vez
+        la condicón resulta ser falsa.
+      </p>
+
+      <p>Si la condición siempre es verdadera, al ejecutar esta instrucción se produce un ciclo infinito.
+        A fin de evitarlo, las instrucciones del cuerpo del ciclo deben contener alguna instrucción que modifique la o las variables involucradas en la condición,
+        de modo que ésta sea falso en algún momento y así terminar la ejecución del ciclo.       
+      </p>
+
+      </div>
+
+      <div class="nota-box"><h2 class="number-title"> Sintaxix ciclo  <em>repetir-hasta</em></h2>
+        <p>En el ciclo <em>repetir-hasta</em> la condición se evalua despues de la ejecución del ciclo.
+          Por lo que, el ciclo siempre se ejecuta por lo menos una vez. El ciclo se repite hasta que 
+          la condición sea verdadera.    
+        </p>
+        <p>
+          <div class="flexbox">
+              <img src="../Imagenes/Sintaxis_ciclo_repetir_hasta.png" alt="", width="30%" height="auto">
+          </div>
+        </p>
+  
+        <p>La secuencia de instrucciones que forma el cuerpo del ciclo se ejecuta una vez y luego se evalúa 
+          la condición. Si la condición es falsa, el cuerpo del ciclo se ejecuta nuevamente y se vuelve a
+          evaluar la condición. Esto se repite hasta que la condición sea verdadera. Note que, dado que la condición se evalúa al final,
+          las instrucciones del cuerpo del ciclo serán ejecutadas al menos una vez.</p>
+  
+        <p>A fin de evitar ciclos infinitos, el cuerpo del ciclo debe contener alguna instrucción que modifique 
+          la o las variables involucradas en la condición de modo que en algún momento la condición sea verdadera y 
+          se finalice la ejecución del ciclo.
+        </p>
+        </div>
+
+
+      <div class="nota-box"><h2 class="number-title"> Sintaxix ciclo <em>para</em> (<em>for</em>) </h2>
+
+
+        <p>La instrucción <em>para</em> ejecuta una secuencia de instrucciones un número determinado de veces.</p>
+
+      <p>
+        <div class="flexbox">
+            <img src="../Imagenes/Sintaxis_ciclo_for.png" alt="", width="30%" height="auto">
+        </div>
+      </p>
+
+      <p>Al ingresar al bloque, la variable $i$ recibe el valor inicial $0$ y se ejecuta la secuencia de instrucciones
+        que forma el cuerpo del ciclo. Luego se incrementa la variable $i$ en $1$ y se evalúa si el valor almacenado 
+        en $i$ es mayor que $10$. Si esto es falso se repite hasta que $i$ sea mayor que $10$. </p>
+        <!-- Si se omite la cláusula Con Paso <paso>, la variable <variable> se incrementará en 1.</p> -->
+      </div>
+      
+  
+
+      <div class="nota-box"><h1 class="number-title"> Práctica</h1>
+        <p>Construye el diagrama de flujo de un algoritmo que sume los $50$ primeros números naturales.</p>
+      </div>
+
+      <div class="nota-box"><h1 class="number-title"> Práctica</h1>
+        <p>Construye el diagrama de flujo de un algoritmo que solicite al usuario un número entero positivo $n$
+           y determine e imprima la suma de los primeros $n$ números naturales.</p>
+      </div>
+
+      <div class="nota-box"><h1 class="number-title"> Práctica</h1>
+        <p>Construye el diagrama de flujo de un algoritmo que determine e imprima la suma:  
+          $$3 + 6 + 9 + \cdots + 99.$$
+         </p>
+      </div>
+
+      <div class="nota-box"><h1 class="number-title"> Práctica</h1>
+        <p>Construye el diagrama de flujo de un algoritmo que solicite al usuario un número entero positivo $n$, 
+          y  determine e imprime el factorial de $n$.
+        </p>
+      </div>
+       
     </body>

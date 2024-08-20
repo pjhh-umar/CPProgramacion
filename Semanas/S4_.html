@@ -17,7 +17,7 @@
 
     
 
-   
+
     <!-- Next part is for new coomands -->
     <script>
       window.MathJax = {
@@ -31,6 +31,7 @@
       };
     </script>
 
+    
     <!-- This part is for using single $ for latex input, instead of \(\) -->
     <script>
         MathJax = {
@@ -46,13 +47,33 @@
     
     <!-- This part restart counter of cards to start at n+1 -->
     <style>
-      /* body.number-title{
-        counter-reset: sectionCounter 1 subsectioncounter ;
+      /* body.number-title
+      {
+      counter-reset: temaCounter 1 subsectioncounter ;
       } */
-      h1.page-title{
-        counter-reset: semanaCounter 6 sectionCounter  subsectionCounter;
+      body.fondo-body{
+        counter-reset: temaCounter 6 sectionCounter;
       }
-    </style>
+
+      /* h1.page-number-title
+      {
+      counter-reset: sectionCounter 0;
+      }  */
+
+      h1.tema-number-title
+          {
+          counter-reset: sectionCounter 0;
+          } 
+
+      h1.number-title
+      {
+      counter-reset: subsectionCounter;
+      /* counter-reset: subsectionCounter; */
+      }
+
+
+
+</style>
 
     <!-- CSS -->
 
@@ -70,7 +91,9 @@
           <div class="subtitle">Universidad del Mar, campus Huatulco</div>
           <div class="subsubtitle">Licenciatura en Actuaría </div>
           <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
-      
+          </div>
+          <div class="logo_superior_umar">
+            <a href="https://www.umar.mx" target="_blank"><img src="../Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
           </div>
 
       
@@ -81,13 +104,10 @@
             <li> <a href="https://pjhh-umar.github.io/CPProgramacion/Home.html"> Inicio  </a> </li>
             <li> <a href="https://pjhh-umar.github.io/CPProgramacion/Informacion_General.html"> Información </a> </li>
             <li> <a href="https://pjhh-umar.github.io/CPProgramacion/Notas.html"> Notas  </a> </li>
-            <li> <a href="https://pjhh-umar.github.io/CPProgramacion/Practicas.html">Prácticas</a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CPProgramacion/Practicas.html">Ejercicios</a> </li>
             <li> <a href="https://pjhh-umar.github.io/CPProgramacion/Enlaces_externos.html"> Links </a> </li>
           </ul>
           </nav>
-          <div class="logo_superior_umar">
-            <a href="https://www.umar.mx" target="_blank"><img src="./Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
-          </div>
        
         
         <!-- 
@@ -98,132 +118,52 @@
 
       <!-- This part is for title in tab-->
             
-      <title>Semana 6</title>
+      <title>Semana 4</title>
       </head>  
 
-
-
-    <body class="fondo-body" ><h1 class="page-title"> Semana 6 </h1>
+      <body class="fondo-body" ><h1 class="page-number-title"> Semana 6 </h1>
       
-    <h1 class="page-subtitle">Practicando en PseInt</h1> 
-
-    <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que solicite al usuario que escriba su nombre,
-        e imprima un  saludo llamándolo por su nombre. Por ejemplo:
-        <center>"¡Hola Pablo!"</center></p>
-      </div>
-
-    <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que solicite un nombre y un apellido 
-        luego imprima el nombre y el apellido juntos (separados por un espacio). Por ejemplo:
-        <center>"Pablo Hernández"</center></p>
-       </p>
-    </div>
-
-    <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que solicite al usuario un número entero,
-         e imprima el número siguiente al ingresado por el usuario.
-       </p>
-    </div>
-
-    <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que solicite al usuario un número entero,
-         e imprima el doble y el triple del número ingresado por el usuario.
-       </p>
-    </div>
-
-    <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que solicite al usuario un número entero,
-         e imprima el cuadrado y el cubo del número ingresado por el usuario.
-       </p>
-    </div>
-
-    <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que solicite al usuario la base y la altura 
-        de un rectangulo y calcule e imprima el área y el perímetro del rectangulo mediante un mensaje apropiado.
-       </p>
-    </div>
-
-      <!-- <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-        <p>Construye el diagrama de flujo de un algoritmo que solicite al usuario un número entero,
-          y determine e imprima si este es divisible entre $7$ y mayor que $40$.
-         </p>
-      </div> -->
-
-     
-
-      <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que lea cuatro números enteros y  
-      calcule e imprima la suma, producto y el promedio de estos.</p>
-      </div>
- 
-      <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-      <p>Construye el diagrama de flujo de un algoritmo que definiendo sólo una variable, lea un número entero, 
-      lo multiplique por $2$ y a continuación  imprima el valor resultante (el cual tiene que estar 
-      almacenado en la única variable, la original).</p>
-      </div>
-    
-      
-
-      <div class="nota-box"> <h1 class="number-title"> Ejercicio</h1>
-        Construye el diagrama de flujo de un algoritmo que lea dos números $a$ y $b$ e intercambie los valores (esto es, 
-        el valor de $a$ tiene que ser el de $b$ y viceversa) pero sin definir otra variable auxiliar.  
-      </div>
-
-     
-        <div class="nota-box"> <h1 class="number-title"> Ejercicio</h1>
-          Construye el diagrama de flujo de un algoritmo que lea las longitudes de los catetos de un triángulo rectángulo,
-          obtenga la hipotenusa e imprima su valor. <!-- y los ángulos agudos del triángulo rectángulo 
-          a partir de las longitudes de los catetos.-->
-        </div>
-
-        <div class="nota-box"> <h1 class="number-title"> Ejercicio</h1>
-          <p>Construye el diagrama de flujo de un algoritmo que solicite al usuario el número de hombres y  el 
-          número de mujeres que hay en un grupo. Luego, determine e imprima el porcentaje de hombres y 
-          mujeres que hay en el grupo.
-        </p>
-        </div>
- 
-      
-    <div class="nota-box"><h1 class="number-title"> Estructuras de control</h1>
-      <p>En su mayoría los algoritmos definidos hasta este punto se ejecutan de modo <b>secuencial</b>, 
+    <h1 class="tema-number-title"> Estructuras de control</h1>
+    <div class="nota-box"><h1 class="title"> Introducción</h1>
+      <p>En un principio la mayoría de los algoritmos definidos se ejecutan de manera <b>secuencial</b>, 
         es decir, una sentencia después de otra. La ejecución comienza con la primera sentencia del algoritmo 
         y prosigue hasta la última sentencia, cada una de las cuales se ejecuta una sola vez.
-        Esta forma de programación es adecuada para resolver problemas sencillos.
       </p> 
 
-      <p>Este modo se caracteriza porque una acción se ejecuta detrás de otra. El flujo del programa coincide 
-        con el orden en el que se encuentran las instrucciones.  Aquí podemos encontrar operaciones de
-        <em>inicio/fin, declaración de variables,  asignación de variables, operaciones,  etc</em>.
-        Este tipo de estructura se basa en las etapas que constituyen un algoritmo o programa:
+      
+
+      <p>Este modo se caracteriza porque una acción se ejecuta detrás de otra. El flujo del programa 
+        coincide con el orden en el que se encuentran las instrucciones. Aquí podemos
+        encontrar operaciones de <em>inicio/fin, declaración de variables, asignación de variables, operaciones,
+        etc</em>. Este tipo de estructura se basa en las etapas que constituyen un algoritmo o programa:
         <ul>
           <li>Declaración de variables.</li>
           <li>Inicialización de variables/lectura de datos.</li>
           <li>Operaciones.</li>
           <li>Salida.</li>
         </ul>
-        </p>
+      </p>
      
-        
-      <p>Sin embargo, para la resolución de problemas
-        de tipo general se necesita la capacidad de controlar cuáles son las sentencias que se
-        ejecutan y en qué momentos. 
+      <p>Esta forma de programación es adecuada para resolver problemas sencillos. Sin embargo, para la 
+        resolución de problemas de más complejos es necesario poder <b>controlar cuáles son las sentencias 
+        que se ejecutan y en qué momentos</b>. 
       </p>
 
       <p>Las <b>estructuras de control</b> controlan el flujo de ejecución de un programa o función.
         Las instrucciones o sentencias se organizan en tres tipos de estructuras de control 
-        que sirven para controlar el flujo de la ejecución: <em><b>secuencia</b>, <b>selección (decisión)</b> y 
+        que sirven para controlar el flujo de la ejecución: <em><b>secuencial</b>, <b>selección (decisión)</b> y 
         <b>repetición</b></em>.
       </p>
     </div>
- 
-     <div class="nota-box"><h1 class="number-title"> Estructuras de selección: sentencias <em>if</em> y <emp>switch</emp></h1>  
-       <p>Consideraremos las estructuras selectivas o condicionales: sentencias <em>if</em> y <em>switch</em>, que controlan
-         si una sentencia o lista de sentencias se ejecutan en función del cumplimiento o no de una condición.
-        </p>
+    <h1 class="tema-number-title"> Estructuras de selección: Sentencias <em>if</em> y <emp>switch</emp></h1>  
+     
+    <div class="nota-box"><h1 class="title"> Introducción</h1>
+      <p>Consideraremos las estructuras selectivas o condicionales: sentencias <em>if</em> y <em>switch</em>, que controlan
+      si una sentencia o lista de sentencias se ejecutan en función del cumplimiento o no de una condición.
+      </p>
      </div>
-
-     <div class="nota-box"><h2 class="number-title"> Sintaxis sentencia <em>if</em></h2>
+      
+      <div class="nota-box"><h1 class="number-title"> Estructura condicional <em>if</em></h1>
 
       <p>En general, la sintaxis de la sentencia <em>if</em> es:</p>
 
@@ -234,7 +174,7 @@
       </p>
 
       <p>Enseguida se presenta un ejemplo más especifico sobre el uso de la sentencia <em>if</em> :</p>
-      
+      <h2 class="title"> Ejemplo</h2>
       <p>
         <div class="flexbox">
             <img src="../Imagenes/Sentencia_If_.png" alt="", width="70%" height="auto">
@@ -242,120 +182,58 @@
       </p>
      </div>
 
- 
-     <h1 class="page-subtitle"> Practicando en PSeInt </h1>   
- 
-<!--  
-         <div class="nota-box">
-           <h1 class="number-title"> Ejercicio</h1>
-         <p>Construye el diagrama de flujo de un algoritmo que solicite al usuario ingresar un número real 
-           y determine si este es positivo, en caso afirmativo  imprima "El número es positivo", de lo 
-           contrario imprima "El número es positivo".
- 
-         </p>
-         </div>
-  -->
-         <!-- <div class="nota-box">
-           <h1 class="number-title"> Ejercicio</h1>
-         <p>Construye el diagrama de flujo de un algoritmo que solicite la edad del usuario 
-           y determine si este es mayor de edad, en caso afirmativo imprima "Mayor de edad", de lo 
-           contrario imprima "Menor de edad".
-         </p>
-         </div> -->
-<!--  
-         <div class="nota-box">
-           <h1 class="number-title"> Ejercicio</h1>
-         <p>Construye el diagrama de flujo de un algoritmo que reciba un número real introducido por el usuario 
-           y determine si este es se encuentra entre $-1$ y $1$. i.e. si el número se encuentra en el intervalo $(-1,1)$,
-           de ser así imprima "VERDADERO", de lo contrario imprima "FALSO".
-         </p>
-         </div> -->
- 
-         <!-- <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-           <p>Construye un diagrama de flujo que, reciba como dato un número entero, determine
-              e imprima si el mismo es par o impar.
-           </p>       
-         </div> -->
-
-       
-      
-          <div class="nota-box"><h1 class="number-title">  Ejercicio</h2>
-            <p>Construye el diagrama de flujo de un algoritmo que solicite al usuario tres números enteros, validar
-              que en efecto se trata de números distintos, de no ser así terminar el algoritmo inmeditamente, en
-              caso de ser numeros distintos imprimir el  mayor de ellos.
-            </p>
-            </div>
-
-           
+     <div class="nota-box"><h1 class="number-title"> Estructura condicional <em>Según</em> (<em>switch</em>)</h1>
+      <p>La estructura condicional <em>if</em> nos proporciona, únicamente dos resultados,
+        uno para cuando es verdadero y otro para cuando es falso. La estructura <em>según</em>,
+        por su parte nos permite elegir entre muchas opciones.</p>
+     </div>
         
-         
-         <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-           <p> Construye el diagrama de flujo  de un algoritmo  que reciba las calificaciones de un alumno del
-             SUNEO, se debe solicitar la calificaión de los tres parciales y del examen ordinario, luego 
-             calcule su promedio  final e imprima "Felicidades, aprobaste el curso" en caso de que su
-             calificación final sea mayor o igual que $6$ y "Lo siento, reprobaste el curso" en caso contrario.
-           </p>
+      <div class="nota-box"><h2 class="number-title"> Características</h2>
+        <ol>
+          <li>Esta estructura nos permite ejecutar una de entre un conjunto de alternativas,
+            con base en el valor almacenado en una <b>variable de tipo númerico</b> 
+            llamada <b><em>selector</em></b>.</li>
+          <li>No tiene sentido usar un selector para una variable como por ejemplo sexo ($1$; hombre, $2$: Mujer),
+            en este caso es más óptimo y eficiente la estructura selectiva $if$ pero para una variable como 
+            carrera (1: 'Economía', 2: 'Turismo'. 3: 'Comunicación', 4:'Relaciones internacionales', 5: 'Actuaria') 
+            es más recomendable  usar un selector.</li>
+          <li>El selector debe ser una variable que toma más de dos valores  enteros $1, 2, 3 ,\ldots N$ y
+            dependiendo de ese valor se ejecute ciertas instrucciones. 
+          </li>
+          <li>Se evalua el contenido del <em>selector</em> y se ejecuta la secuencia de instrucciones asociadas 
+            con dicho valor. </li>
+          <li>La secuencia de instrucciones ejecutada por una instrucción <em>Según</em> depende del valor de
+            una variable numérica.</li>
+          <li>Cada opción está formada por uno o más números separados por comas.</li>
+          <li>Opcionalmente, se puede agregar una opción final, llamada <b><em>De otro modo</em></b>, cuya secuencia 
+            de instrucciones asociada se ejecutara sólo si el valor almacenado en la variable no coincide 
+            con ninguna de las opciones anteriores.</li>
+        </ol>
+      </div>
 
-           <p><b>Recuerda:</b> En el <b>SUNEO</b>, el promedio de las calificaciones obtenidas en cada parcial equivale a la mitad
-             de tu calificacion final y la calificación obtenida en el examen ordinario determina la otra mitad
-            de la calificación final del curso.
-          </p>
-         </div> 
+      <div class="nota-box"><h2 class="number-title"> Sintaxis sentencia <em>según</em></h2>
 
+      <p>En general, la sintaxis de la sentencia <em>según</em> es:</p>
 
-         <div class="nota-box">
-          <h1 class="number-title"> Ejercicio</h1>
-          <p>Construye el diagrama de flujo  de un algoritmo  que solicite al usuario un número real $r$.
-            Luego, si el número ingresado es mayor que cero, calcular e imprimir  el perímetro de 
-            la circunferencia cuyo radio es $r$.
-          </p>
-         </div>
-
-          <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-            <p>Construye el diagrama de flujo  de un algoritmo  que solicite al usuario dos números reales y 
-              determine e imprima el mayor de ellos, si ambos números son iguales imprimir el mensaje "Los 
-              números son iguales". 
-            </p>
-          </div>
-
-          <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-            <p>Construye el diagrama de flujo  de un algoritmo  que solicite al usuario dos números enteros.
-             Si alguno o ambos números son negativos, "invertir" su signo, luego calcular e imprimir la suma 
-             de ambos números.
-            </p>
-          </div>
-
-
-
-          
-
-
-         <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-          <p>Escribe el diagrama de flujo de un algoritmo que solicite un número y determine e imprima si este
-             es o no un numero de exactamente cuatro dígitos.
-          </p>
+      <p>
+        <div class="flexbox">
+            <img src="../Imagenes/estructura_segun_general.png" alt="", width="70%" height="auto">
         </div>
+      </p>
 
-        <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
-        <p>Escribe el diagrama de flujo de un algoritmo que solicite al usuario un número de cuatro dígitos,
-          luego genere una impresión como la que se muestra a continuación: Por ejemplo si el número 
-          ingresado es: $6352$, entonces se debe imprimir:<br>
-          <center>
-          $6$<br>
-          $3$<br>
-          $5$<br>
-          $2$
-        </center></p>
-        </div>
+      <p>Donde <b><em>selector</em> es una variable de tipo númerico</b> y $n_1,n_2,n_3,n_4,n_5, n_6$ son 
+        valores que toma la variable <em>selector</em>
+      </p>
 
-        
-
-         <div class="nota-box"><h1 class="number-title">  Ejercicio</h1>
-          <p>Construye el diagrama de flujo de un algoritmo que lea números de $5$ dígitos y determine e imprima 
-             si es o no palíndromo</p>
+      <p>Enseguida se presenta un ejemplo más especifico sobre el uso de la sentencia <em>según</em> :</p>
       
-            <!-- <p><b>Hint:</b> Utilice los operadores de división entera y residuo para separar el número en sus dígitos individuales</p>-->
-         </div>
+      <h2 class="title"> Ejemplo</h2>
+      <p>
+        <div class="flexbox">
+          <img src="../Imagenes/estructura_segun.png" alt="", width="70%" height="auto">
+        </div>
+      </p>
+     </div>
 
          
 

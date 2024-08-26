@@ -1,0 +1,230 @@
+
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+    
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams" /* this part is for numbered equations */
+        }
+      };
+    </script>
+
+    
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>
+
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+      /* body.number-title
+      {
+      counter-reset: temaCounter 1 subsectioncounter ;
+      } */
+      body.fondo-body{
+        counter-reset: temaCounter 7 sectionCounter;
+      }
+
+      /* h1.page-number-title
+      {
+      counter-reset: sectionCounter 0;
+      }  */
+
+      h1.tema-number-title
+          {
+          counter-reset: sectionCounter 0;
+          } 
+
+      h1.number-title
+      {
+      counter-reset: subsectionCounter;
+      /* counter-reset: subsectionCounter; */
+      }
+
+
+
+</style>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+    <!-- Top Menu  -->
+    
+          
+        <header class="main-header">
+        
+          <div class="logo_superior_umar">
+          <a href="https://www.umar.mx" target="_blank"><img src="../Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+          <div class="contenedor_titulo">
+          <div class="title">Introducción a la Programación</div>
+          <div class="subtitle">Universidad del Mar, campus Huatulco</div>
+          <div class="subsubtitle">Licenciatura en Actuaría </div>
+          <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
+          </div>
+          <div class="logo_superior_umar">
+            <a href="https://www.umar.mx" target="_blank"><img src="../Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+
+      
+        </header>
+
+        <nav class="top-nav">
+          <ul>
+            <li> <a href="https://pjhh-umar.github.io/CPProgramacion/Home.html"> Inicio  </a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CPProgramacion/Informacion_General.html"> Información </a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CPProgramacion/Notas.html"> Notas  </a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CPProgramacion/Practicas.html"> Prácticas</a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CPProgramacion/Enlaces_externos.html"> Links </a> </li>
+          </ul>
+          </nav>
+       
+        
+        <!-- 
+          <nav class="small-nav" align=right>
+            <button onclick="myFunction()">Claro/Obscuro 
+          </nav> 
+        -->
+
+      <!-- This part is for title in tab-->
+            
+      <title>Semana 5</title>
+      </head>  
+
+      <body class="fondo-body" ><h1 class="page-number-title"> Semana 5 </h1>
+        
+        <h1 class="tema-number-title">Estructuras de repetición: Mientras (<em>while</em>), repetir-hasta (<em>do-while</em>), para (<em>for</em>)</h1> 
+      
+        <div class="nota-box"><h1 class="number-title"> Ciclo <em>mientras</em> (<em>While</em>) </h1>
+          <p>En el ciclo <b><i>mientras</i></b> la <b>condición se evalua antes de ingresar al bucle y si esta es verdadera
+            entonces ingresa al ciclo en caso contrario se sale</b>. Por lo que si la condición es inicialmente falsa, el bucle no 
+          se ejecuta ninguna vez. Para ambos casos, <b>el bucle se repite mientras la condición sea verdadera.</b>     </p>
+        </div>
+      
+            <div class="nota-box"><h2 class="number-title"> Sintaxis ciclo <em>mientras</em> (<em>While</em>)</h2>  
+            <p>El ciclo <b><i>mientras</i></b> ejecuta una secuencia de instrucciones mientras una condición sea verdadera.
+            </p>    
+            <p>
+              <div class="flexbox">
+                  <img src="../Imagenes/Sintaxis_ciclo_mientras.png" alt="", width="20%" height="auto">
+              </div>
+            </p>
+            <p>Si la condición resulta verdadera, se ejecuta una vez la secuencia de instrucciones que forman el
+              cuerpo del ciclo. Al finalizar la ejecución del cuerpo del ciclo se vuelve a evaluar la condición y, 
+              si es verdadera, la ejecución se repite. Estos pasos se repiten <b>mientras la condición sea verdadera.</b>
+            </p>
+      
+            <p>Las instrucciones del cuerpo del ciclo <b>pueden no ejecutarse nunca</b>, si al evaluar por primera vez
+              la condicón resulta ser falsa.
+            </p>
+      
+            <p>Si la condición siempre es verdadera, al ejecutar esta instrucción se produce un <b><i>ciclo infinito</i></b>.
+              A fin de evitarlo, las instrucciones del cuerpo del ciclo deben contener alguna instrucción que modifique la o las variables involucradas en la condición,
+              de modo que ésta sea falso en algún momento y así terminar la ejecución del ciclo.       
+            </p>
+      
+            </div>
+      
+            
+      
+            <div class="nota-box"><h1 class="number-title"> Ciclo <em>para</em> (<em>for</em>) </h1>
+              <p>De manera similar al Ciclo <b><i>mientras</i></b>, en el ciclo <b><i>para</i></b> la <b>condición se evalua antes de 
+                ingresar al bucle y si esta es verdadera entonces ingresa al ciclo en caso contrario se sale</b>. Por lo que si la 
+                condición es inicialmente falsa, el bucle no se ejecuta ninguna vez. Para ambos casos, <b>el bucle se repite mientras 
+                la condición sea verdadera.</b>     </p>
+            </div>
+      
+            <div class="nota-box"><h2 class="number-title"> Sintaxix ciclo <em>para</em> (<em>for</em>) </h2>
+      
+      
+              <p>La instrucción <b><i>para</i></b> ejecuta una secuencia de instrucciones un número determinado de veces.</p>
+      
+            <p>
+              <div class="flexbox">
+                  <img src="../Imagenes/Sintaxis_ciclo_for.png" alt="", width="25%" height="auto">
+              </div>
+            </p>
+      
+            <p>Al ingresar al bloque, la variable $i$ recibe el valor inicial $0$ y se ejecuta la secuencia de instrucciones
+              que forma el cuerpo del ciclo. Luego se incrementa la variable $i$ en $1$ y se evalúa si el valor almacenado 
+              en $i$ es mayor que $10$. Si esto es falso se repite hasta que $i$ sea mayor que $10$. </p>
+              <!-- Si se omite la cláusula Con Paso <paso>, la variable <variable> se incrementará en 1.</p> -->
+            </div>
+
+            
+            <div class="nota-box"><h1 class="number-title"> Sintaxix ciclo  <em>repetir-hasta</em></h1>
+              <p>En el ciclo <b><i>repetir-hasta</i></b> la condición se evalua despues de la ejecución del ciclo.
+                Por lo que, el <b>ciclo siempre se ejecuta por lo menos una vez</b>. El ciclo se repite hasta que 
+                la condición sea verdadera.    
+              </p>
+              <p>
+                <div class="flexbox">
+                    <img src="../Imagenes/Sintaxis_ciclo_repetir_hasta.png" alt="", width="25%" height="auto">
+                </div>
+              </p>
+        
+              <p>La secuencia de instrucciones que forma el cuerpo del ciclo se ejecuta una vez y luego se evalúa 
+                la condición. Si la condición es falsa, el cuerpo del ciclo se ejecuta nuevamente y se vuelve a
+                evaluar la condición. Esto se repite hasta que la condición sea verdadera. Note que, dado que la condición se evalúa al final,
+                las instrucciones del cuerpo del ciclo serán ejecutadas al menos una vez.</p>
+        
+              <p>A fin de evitar ciclos infinitos, el cuerpo del ciclo debe contener alguna instrucción que modifique 
+                la o las variables involucradas en la condición de modo que en algún momento la condición sea verdadera y 
+                se finalice la ejecución del ciclo.
+              </p>
+              </div>
+      
+            
+        
+      
+            <div class="nota-box"><h1 class="number-title"> Práctica</h1>
+              <p>Construye el diagrama de flujo de un algoritmo que sume los $100$ primeros números naturales.</p>
+            </div>
+      
+            <div class="nota-box"><h1 class="number-title"> Práctica</h1>
+              <p>Construye el diagrama de flujo de un algoritmo que solicite al usuario un número entero positivo $n$
+                 y determine e imprima la suma de los primeros $n$ números naturales.</p>
+            </div>
+      
+            <div class="nota-box"><h1 class="number-title"> Práctica</h1>
+              <p>Construye el diagrama de flujo de un algoritmo que determine e imprima la suma:  
+                $$3 + 6 + 9 + \cdots + 99.$$
+               </p>
+            </div>
+      
+            <div class="nota-box"><h1 class="number-title"> Práctica</h1>
+              <p>Construye el diagrama de flujo de un algoritmo que solicite al usuario un número entero positivo $n$, 
+                y  determine e imprime el factorial de $n$.
+              </p>
+            </div> 
+    </body>

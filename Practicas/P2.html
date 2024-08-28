@@ -1,0 +1,201 @@
+
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+    
+
+   <!-- Next part is for new coomands -->
+   <script>
+    window.MathJax = {
+      tex: {
+        macros: {
+          sen: "\\operatorname{sen}",
+          seg: ["\\overrightarrow{#1}", 1]
+        },
+        tags: "ams" /* this part is for numbered equations */
+      }
+    };
+  </script>
+
+  <!-- This part is for using single $ for latex input, instead of \(\) -->
+  <script>
+      MathJax = {
+      tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+          },
+      svg: {
+          fontCache: 'global'
+      }
+  };
+    </script>
+
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+      body.fondo-body{
+        counter-reset: temaCounter 2 sectionCounter;
+      }
+     
+      h1.page-title-practica{
+        counter-reset: semanaCounter 1 sectionCounter  subsectionCounter;
+      } 
+      
+
+
+    </style>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+    <!-- Top Menu  -->
+    
+          
+        <header class="main-header">
+        
+          <div class="logo_superior_umar">
+          <a href="https://www.umar.mx" target="_blank"><img src="../Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+          <div class="contenedor_titulo">
+          <div class="title">Introducción a la Programación</div>
+          <div class="subtitle">Universidad del Mar, campus Huatulco</div>
+          <div class="subsubtitle">Licenciatura en Actuaría </div>
+          <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
+      
+          </div>
+          <div class="logo_superior_umar">
+            <a href="https://www.umar.mx" target="_blank"><img src="../Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+      
+        </header>
+
+        <nav class="top-nav">
+          <ul>
+            <li> <a href="https://pjhh-umar.github.io/CPProgramacion/Home.html"> Inicio  </a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CPProgramacion/Informacion_General.html"> Información </a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CPProgramacion/Notas.html"> Notas  </a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CPProgramacion/Practicas.html">Prácticas</a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CPProgramacion/Enlaces_externos.html"> Links </a> </li>
+          </ul>
+          </nav>
+       
+        
+        <!-- 
+          <nav class="small-nav" align=right>
+            <button onclick="myFunction()">Claro/Obscuro 
+          </nav> 
+        -->
+
+      <!-- This part is for title in tab-->
+            
+      <title>Práctica 2 </title>
+      </head>  
+
+
+
+  <body class="fondo-body" ><h1 class="page-title-practica"> Práctica 2 </h1>   
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo de un algoritmo que solicite al usuario un número entero positivo $n$
+        e imprima la tabla de multiplicar del número $n$.
+     </p>
+     
+     <p>La tabla de multiplicar se debe imprimir de la siguiente manera. Por ejemplo si el usuario ingresa $3$, 
+      se debe imprimir la tabla:
+      \begin{align*}
+        1 &\times 3 = 3\\
+        2 &\times 3 = 6\\
+        3 &\times 3 = 9\\
+        4 &\times 3 = 12\\
+        5 &\times 3 = 15\\
+        6 &\times 3 = 18\\
+        7 &\times 3 = 21\\
+        8 &\times 3 = 24\\
+        9 &\times 3 = 27\\
+        10 &\times 3 = 30\\
+      \end{align*}
+    </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo de un algoritmo que solicite al usuario un  número $n$ menor que $100$, 
+        valida que el número ingresado sea estrictamente menor que $100$ de lo contrario vuelve a solicitar el número.
+        Luego imprime los números hacia atras desde $100$ hasta el número $n$.</p>
+    </div>
+      
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo de un algoritmo que solicite al usuario números enteros hasta que la
+         suma de los numeros ingresados sea mayor que $100$. Cada vez que se ingresa un número imprime la 
+         suma acumulada. Cuando la suma sea mayor que $100$ deten el ciclo e imprime la suma.
+      </p>
+    </div>
+
+    
+<!-- 
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo de un algoritmo que solicite al usuario que ingrese un número entero, 
+        enseguida pregunta al usuario si quiere añadir otro número: "Ingresa \"Y\" o \"y\" (Yes) para ingresar 
+        otro número, presiona cualquier otra letra en caso contrario", si se ingresa otro número sumar con el anterior 
+        y así sucesivamente, sigue solicitando números hasta que no 
+        respondan \"y\" o \"Y\". Una vez que el bucle se haya detenido, muestra la suma final.
+      </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>Construye el diagrama de flujo de un algoritmo  que solicite al usuario un número entero positivo.
+        Luego, imprima el número en notacion desarrollada i.e. por ejemplo el usuario ingresa $897$,
+        entonces se debe imprimir la siguiente expresión:
+        $$\text{ 897=8 x 10^2 + 9 x 10^1 + 7 x 10^0}$$
+  
+      </p>
+     </div>
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>
+        Construye el diagrama de flujo de un algoritmo que lea un número entero positivo $n$ (validar entrada)
+        e invierta sus dígitos, imprima el número resultante.  
+      </p>
+    </div>
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p> Construye el diagrama de flujo de un algoritmo que imprima la tabla de multiplicar del
+        $1, 2,\ldots ,9$ y $10$
+     </p>
+     
+
+     <p>Cada tabla de multiplicar se debe imprimir de la siguiente manera. Por ejemplo
+      para la tabla de multiplicar del $3$, se debe imprimir  la tabla:
+      \begin{align*}
+        1 &\times 3 = 3\\
+        2 &\times 3 = 6\\
+        3 &\times 3 = 9\\
+        4 &\times 3 = 12\\
+        5 &\times 3 = 15\\
+        6 &\times 3 = 18\\
+        7 &\times 3 = 21\\
+        8 &\times 3 = 24\\
+        9 &\times 3 = 27\\
+        10 &\times 3 = 30\\
+      \end{align*}
+    </p>
+   </div> -->
+
+    <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+      <p>
+        
+      </p>
+    </div>
+
+</body>

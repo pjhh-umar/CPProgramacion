@@ -6,8 +6,22 @@
     <!-- Following part is mathjax, for latex-->
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
- 
-
+    
+    <style>
+        /* Estilos del mensaje flotante */
+        .mensaje-flotante {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: rgba(0, 0, 0, 0.8);
+          color: white;
+          padding: 15px;
+          border-radius: 10px;
+          z-index: 1000;
+          display: none; /* Inicialmente oculto */
+        }
+    </style>
     <!-- This part is for jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -99,6 +113,50 @@
       </head>  
           
         <body class="fondo-body" >
+
+          <div id="mensaje" class="mensaje-flotante">
+            <center>¡Hola!</center><br>
+            Faltan <span id="dias-faltantes"></span> días para que termine el Curso Propedeutico.
+        </div>
+    
+        <script>
+            // Función para calcular los días restantes
+            function calcularDiasRestantes(fechaObjetivo) {
+                var hoy = new Date();
+                var fechaEvento = new Date(fechaObjetivo);
+    
+                // Calcular la diferencia en milisegundos
+                var diferencia = fechaEvento - hoy;
+    
+                // Convertir la diferencia a días
+                var diasFaltantes = Math.ceil(diferencia / (1000 * 60 * 60 * 24));
+    
+                return diasFaltantes;
+            }
+    
+            // Mostrar el mensaje cuando se cargue la página
+            window.onload = function() {
+                var mensaje = document.getElementById('mensaje');
+                var diasSpan = document.getElementById('dias-faltantes');
+                
+                // Establece la fecha objetivo (YYYY-MM-DD)
+                var fechaObjetivo = '2024-09-20';
+    
+                // Calcular días restantes
+                var diasFaltantes = calcularDiasRestantes(fechaObjetivo);
+    
+                // Insertar los días restantes en el mensaje
+                diasSpan.textContent = diasFaltantes;
+    
+                // Mostrar el mensaje
+                mensaje.style.display = 'block';
+    
+                // Ocultar el mensaje después de 5 segundos
+                setTimeout(function() {
+                    mensaje.style.display = 'none';
+                }, 5000); // 5000 milisegundos = 5 segundos
+            };
+        </script>
           
           <div class="info-profesor-box">
             <!-- <div class="informacion_profesor">  -->

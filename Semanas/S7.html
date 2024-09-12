@@ -118,11 +118,191 @@
 
       <!-- This part is for title in tab-->
             
-      <title>Semana 6</title>
+      <title>Semana 7</title>
       </head>  
 
       <body class="fondo-body" ><h1 class="page-number-title"> Semana 7 </h1>
         
         <h1 class="tema-number-title"> 🧑🏻‍💻 🏋🏻 Seguimos practicando ciclos 🫠 </h1> 
+
+        <br><br>
       
+
+        <h1 class="tema-number-title">   Funciones / Subprocesos en pseint </h1>
+
+
+        <div class="nota-box"><h1 class="number-title"> Introducción</h1>
+          
+          
+          <p>En programación es muy frecuente hacer  uso del algoritmo "<em>Divide y venceras</em>", 
+            el cual consiste en resolver un problema  difícil, dividiéndolo en
+            subproblemas  más sencillos de resolver (tantas veces como sea necesario), 
+            cada uno de estos subproblemas realizan una tarea especifica a la vez y 
+            su implementación es mediante   <em>funciones</em> dentro del algoritmo.
+          </p>
+
+
+          <p>
+            En PSeInt las <b>funciones</b> son  también llamadas  <b>Subprocesos</b>
+            <img src="../Imagenes/Icono_funciones_pseint.JPG" alt="", width="10%" height="auto">. 
+            Un subproceso es una instrucción que permite agrupar variables y sentencias, cuya finalidad es la de ejecutar 
+            una tarea especifica, se pueden añadir una o varias  funciones, en un algoritmo, 
+            en esencia las funciones son subprogramas dentro de un programa, que se pueden invocar
+            (ejecutar) desde cualquier  parte  del  programa,  es  decir,  desde  otra  función,
+            desde  la  misma función  o  desde  el programa principal, cuantas veces sea necesario.
+            En general, la sintaxis de un subproceso en PSeInt es: 
+          </p>
+
+          
+          <p>
+            <div class="flexbox">  
+              <img src="../Imagenes/Sintaxis_funcion_pseint.png" alt="", width="75%" height="auto">
+            </div>
+
+          </p>
+
+          <p>donde:
+            <ul>
+            <li><b>Variable_de_retorno</b>: Si el subproceso  o función, calcula y devuelve un valor,
+              se debe colocar el nombre de la variable que se utilizará para almacenar ese valor;
+              si el subproceso o función no devuelve nada se puede eliminar la variable con su  
+              operador  de asignación <img src="../Imagenes/Operador_asignacion.JPG" alt="", width="1.5%" height="auto">.
+            </li><br>
+            <li><b>Nombre_de_funcion</b>: Es el nombre que recibirá el subproceso o función.</li><br>
+            <li><b>Parametros</b>: Los parametros son variables que requiere la función, 
+              utilizando comas para separarlos,  si el subproceso o función no requiere 
+              parametros puede dejarse en blanco, y de manera opcional omitir los paréntesis.</li>
+          </ul>
+        </p>
+
+        </div>
+
+
+
+          <div class="nota-box"><h1 class="number-title"> Definición</h1>
+          <p>
+            <ul>
+              <li>Si el subproceso no retorna ningun valor, se dice que es un  <b>procedimiento</b>.
+                  <p>
+                    <div class="flexbox">  
+                      <img src="../Imagenes/Procedimiento.png" alt="", width="40%" height="auto">
+                    </div>             
+                  </p>
+                </li>
+              <li> Si el subproceso retorna un valor se le conoce como <b>función</b>.</li> 
+              <p>
+                <div class="flexbox">  
+                  <img src="../Imagenes/funcion.png" alt="", width="60%" height="auto">
+                </div>             
+              </p>
+              <li>Si el subproceso no recibe <b>parametros</b> se pueden colocar los parentesis vacios u omitirse:
+                <p>
+                  <div class="flexbox">  
+                    <img src="../Imagenes/funcion_sin_argumentos.png" alt="", width="50%" height="auto">
+                </div>             
+                </p>
+                <p>
+                  <div class="flexbox">  
+                    <img src="../Imagenes/funcion_sin_argumentos_.png" alt="", width="50%" height="auto">
+                
+                  </div>             
+                </p>
+              </li>
+            </ul>
+          </p>
+
+        </div>
+      
+
+        <div class="nota-box"><h1 class="number-title"> Observación</h1>
+        <p>Enseguida se enlistan algunos aspectos importantes que debemos tener en cuenta 
+          cuando se utilizan subprocesos:
+        </p>
+          
+          <ul>
+              <li>Para <b>invocar o llamar a un subproceso</b>  se debe utilizar el nombre del subproceso y 
+                entre parentesis sus argumentos  (en caso de ser necesario) separados por comas.</li><br>
+
+                <li><b>Llamar a un subproceso</b> provoca que este  se ejecute. 
+              </li><br>
+      
+              <li><b>Los argumentos deben coincidir con los parametros en cantidad y tipo</b>.
+                De igual manera, <b>la <em>variable de retorno</em>  debe coincidir  con la <em>variable 
+                  que recoge</em>  dicho valor</b> en el proceso desde el cual fue invocado el subproceso.   
+              </li><br>
+                
+        
+              <li>Cuando las instrucciones del subproceso  se han realizado, el control regresa 
+                al punto desde el que se llamo en el programa principal o utro subproceso.
+              </li><br>
+
+              <li><b>Los argumentos de un subproceso serán definidos en el proceso que realice la llamada</b>, y por lo tanto 
+                el subproceso los recibira con el mismo tipo de dato ya definido. Por esta razon, <b>no se debe volver 
+                a definir el tipo de dato de la variable que es argumento dentro del subproceso.</b></li>
+          </ul>
+
+        </div>
+
+        <div class="nota-box"><h1 class="number-title"> Ejercicio </h2>
+          <p>Escribe en PseInt  el pseudocódigo de un algoritmo  que  solicite al usuario  tres números reales,
+             determine el mayor y el menor de ellos y los imprima con un mensaje adecuado. Define y utiliza 
+             un subproceso que determine  el mayor de dos numeros reales.
+          </p>
+        </div>
+
+
+      <h1 class="tema-number-title">   Variable globales y locales</h1>
+      
+      <div class="nota-box"><h1 class="number-title"> Introducción</h1>
+
+        <p>Las <b>variables</b> son objetos que pueden cambiar su valor durante la ejecución de
+          un algoritmo. En general se  distinguen dos tipos de variables: <b>locales</b> y <b>globales</b>.
+        </p>
+
+        <ul>
+      <li>Las <b>variables locales</b> son objetos definidos en el proceso principal así como en los  subprocesos y su alcance está
+        limitado solamente al proceso principal o a los  subprocesos donde están definidas. Esto es, 
+        las variables son <b>locales</b> a cada proceso o subproceso donde han sido definidas o declaradas, y se pueden usar 
+        solamente en ese proceso o subproceso. Si se intenta hacer uso de dicha variable en otro proceso o subproceso donde no 
+        ha sido declarada, PSeInt mostrará  un mensaje de error. Por ejemplo, cada variable local definida en un subproceso comienza a existir sólo cuando se llama a ese subproceso,
+        y desaparece cuando el control regresa al proceso principal.
+      </li><br>
+      <li>Por otra parte, las  <b>variables globales</b> son objetos definidos antes del inicio del
+        proceso principal y su alcance es muy amplio, ya que tienen influencia tanto en el proceso principal 
+        como en todas las funciones o subprocesos i.e. una variable global puede ser vista y manipulada por el proceso principal y 
+        todos los subprocesos del algoritmo. <b>Sin embargo, hasta  este momento en  PSeInt no existe el concepto de variable global.</b>
+        </li>
+      </ul>
+      </div>
+
+
+      
+      <div class="nota-box"><h1 class="number-title">   Parámetros por valor y por referencia</h1>
+        <p>En PSeInt la comunicación entre las funciones/subprocesos y el proceso principal, o bien entre los
+          mismos subprocesos, se lleva a cabo mediante  <em>parámetros por valor</em> y <em>por referencia</em>. 
+        </p>
+
+
+        <p>En la definición de los parámetros de un proceso o subproceso se pueden agregar las palabras clave: 
+          <b>Por Valor</b> o <b>Por Referencia</b> para indicar como se pasa cada parámetro.  Si se omiten,
+          estas palabras clave <b>por defecto  el paso será <em>por valor</em> a excepción de los <em>arreglos</em> que 
+          se pasan siempre por referencia.</b> </p>
+
+        <p>
+          Los <b>parámetros por valor</b> permiten pasar datos entre el programa principal y las
+          funciones, e incluso entre las mismas funciones.  En este método,
+          en el parámetro se almacena una copia de la variable original. Si el parámetro sufre 
+          una alteración en la función/subproceso que lo recibe, la variable original no se ve afectada, 
+          i.e. se trabaja sobre una copia del a variable (diferente espacio de memoria). 
+        </p>
+
+        <p>
+          Los <b>parámetros por referencia</b> también permiten la comunicación entre el programa
+          principal y las funciones/subprocesos, o entre las mismas funciones. Sin embargo, en
+          este caso, en lugar de escribir una copia de la variable en el parámetro se escribe
+          la dirección de la misma. Si el parámetro sufre una alteración en la función que
+          lo recibe, la variable original también se ve afectada, i.e. se opera sobre la variable original
+          (se trabaja en el mismo espacio de memoria). 
+          En PSeInt, el paso de variables  por referencia se realiza agregando las palabras clave: <b>Por referencia</b>
+          </p>
       </body>

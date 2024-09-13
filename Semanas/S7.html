@@ -45,35 +45,46 @@
     </script>
 
     
-    <!-- This part restart counter of cards to start at n+1 -->
-    <style>
-      /* body.number-title
+
+<!-- This part restart counter of cards to start at n+1 -->
+<style>
+  .lista
       {
-      counter-reset: temaCounter 1 subsectioncounter ;
-      } */
-      body.fondo-body{
-        counter-reset: temaCounter 9 sectionCounter;
+          counter-reset: listaCounter 0 sublistaCounter 1 subsublistaCounter 1 subsubsublistaCounter 1;
       }
+      /* .sublista{
+          counter-reset: sublistaCounter 1  SubsublistaCounter;
+      } */
+      </style>
 
-      /* h1.page-number-title
-      {
-      counter-reset: sectionCounter 0;
-      }  */
+  <style>
+          /* body.number-title
+          {
+          counter-reset: temaCounter 1 subsectioncounter ;
+          } */
+          body.fondo-body{
+            counter-reset: temaCounter 9 sectionCounter;
+          }
 
-      h1.tema-number-title
+          /* h1.page-number-title
           {
           counter-reset: sectionCounter 0;
-          } 
+          }  */
 
-      h1.number-title
-      {
-      counter-reset: subsectionCounter;
-      /* counter-reset: subsectionCounter; */
-      }
+          h1.tema-number-title
+              {
+              counter-reset: sectionCounter 0;
+              } 
+
+          h1.number-title
+          {
+          counter-reset: subsectionCounter;
+          /* counter-reset: subsectionCounter; */
+          }
 
 
 
-</style>
+  </style>
 
     <!-- CSS -->
 

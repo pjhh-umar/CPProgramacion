@@ -52,7 +52,7 @@
       counter-reset: temaCounter 1 subsectioncounter ;
       } */
       body.fondo-body{
-        counter-reset: temaCounter 5 sectionCounter;
+        counter-reset: temaCounter 5;
       }
 
       /* h1.page-number-title
@@ -62,7 +62,7 @@
 
       h1.tema-number-title
           {
-          counter-reset: sectionCounter 0;
+          counter-reset: sectionCounter 0 subsectionCounter 0;
           } 
 
       h1.number-title
@@ -71,9 +71,8 @@
       /* counter-reset: subsectionCounter; */
       }
 
+    </style>
 
-
-</style>
 
     <!-- CSS -->
 
@@ -456,7 +455,7 @@
         </p>
         </div>
 
-        <div class="nota-box"><h1 class="number-title-practica"> Práctica</h1>
+        <div class="nota-box"><h1 class="number-title"> Ejercicio</h1>
           <p>Construye en PSeInt el diagrama de flujo  de un algoritmo que solicite al usuario ingresar  los 
             lados de un triángulo. Verifica que en efecto estos forman un triángulo, en caso afirmativo
             calcula e imprime el área del triángulo correspondiente, en caso contrario manda un mensaje 

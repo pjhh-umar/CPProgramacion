@@ -580,6 +580,7 @@ h1.tema-number-title{
 h1.tema-number-title::before{
   /* font-size: normal; */
   counter-increment: temaCounter; 
+  counter-reset: sectionCounter; 
   content: "§ Tema " counter(temaCounter)". " ;
 }
 

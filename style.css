@@ -52,7 +52,7 @@ html, body{
   font-optical-sizing: auto;
   line-height: 1.4em;
   font-weight: 400;
-  font-size: 115%;
+  font-size: 100%;
   font-style: normal;
   /*"Quicksand";    */
   /* font-family: 'Noto Serif Tangut', serif; */
@@ -169,7 +169,7 @@ width: auto;
 
 .top-nav a{
   padding: .5%; 
-  font-size: 100%;
+  font-size: 115%;
   font-weight: 800;
   text-decoration: none;
   /* color: rgb(25,25,112); */
@@ -188,7 +188,7 @@ width: auto;
   transition: background-color 0.75s ease;
   /* transition: font-size 0.75s ease; */
   background-color: rgb(211, 211, 211);
-  font-size: 100%;
+  font-size: 1100%;
   font-weight: 400;
   /* color: rgb(25,25,112); */
   color: rgb(0,78,148);
@@ -220,7 +220,7 @@ width: auto;
 
 
 .title{
-  font-size: 160%;
+  font-size: 180%;
   font-weight: 800; 
   text-align: center;
   font-family:'Fredericka the Great', cursive;
@@ -245,7 +245,7 @@ width: auto;
 }
 
 .subtitle{
-  font-size: 130%;
+  font-size: 150%;
   font-weight: 600; 
   text-align: center;
   /* font-family:'Fredericka the Great', cursive; */
@@ -275,7 +275,7 @@ width: auto;
 } */
 
 .subsubtitle{
-  font-size: 120%;
+  font-size: 130%;
   font-weight: 600; 
   text-align: center;
   /* font-family:'Fredericka the Great', cursive; */
@@ -523,7 +523,7 @@ h1.page-title{
 }
 
 h1.page-number-title{
-  font-size: 205%;
+  font-size: 150%;
   text-align: center;
   /* font-family: "Muli"; */
   font-family: 'Gelasio', serif;
@@ -581,7 +581,7 @@ h1.tema-title{
 }
 
 h1.tema-number-title{
-  font-size: 180%;
+  font-size: 140%;
   /* text-align: left; */
   /* font-family: "Muli"; */
   font-family: 'Gelasio', serif;
@@ -653,9 +653,9 @@ h1.tema-subtitle{
 
 
 h1.number-title{
-  font-size: 170%;
+  font-size: 145%;
   font-weight: 600;
-  margin-top: 1.5%;
+  margin-top: 0%;
   margin-bottom: 2.5%;
   padding: 0%;
   content:" ";
@@ -663,9 +663,8 @@ h1.number-title{
   /* font-weight: 800; */
   /* font-family: "Muli"; */
   font-family: 'EB Garamond', serif;
-  font-family: 'Gelasio', serif;
+  /* font-family: 'Gelasio', serif; */
   /* 'Hina Mincho', serif; */
-  /* font-size: 33px; */
   color: rgb(3, 89, 165); 
   line-height: 1.1;
 
@@ -681,7 +680,7 @@ h1.number-title::before{
 }
 
 h2.number-title{
-  font-size: 160%;
+  font-size: 130%;
   font-weight: 600;
   margin-top: 1.5%;
   margin-bottom: 2.5%;
@@ -888,7 +887,7 @@ h1.number-title-practica::after{
     margin: auto;
     margin-bottom: 50px;
     margin-top: 50px;
-    /* font-size: 20px; */
+    font-size: 105%;
     text-align: justify;
     /* font-size: 110%; */
     /* font-weight: 600; */

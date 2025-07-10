@@ -945,7 +945,7 @@ h1.number-title-practica::after{
   margin: auto;
   margin-bottom: 0px;
   margin-top: 0px;
-  font-size: 20px;
+  /* font-size: 20px; */
   /* width: 85%; */
   /* box-shadow: 1px 1px 5px 1px  rgb(31, 147, 201); */
 }
@@ -965,7 +965,7 @@ h1.number-title-practica::after{
   margin-top: 0px;
   margin-left: 0px;
   text-align: left;
-  font-size: 20px;
+  /* font-size: 20px; */
   /* width: 85%; */
   /* box-shadow: 1px 1px 5px 1px  rgb(31, 147, 201); */
 }
@@ -1107,47 +1107,53 @@ img {
 .respButton{
   display: block;
   font-family: "Bitter", serif;
-  border-radius: 60px; 
-  border: 2.5px solid  rgba(52, 173, 249, 0.718) ;
-  /* background-color: rgb(255, 255, 255); */
-  background: rgb(252, 252, 244);
-  /* margin-right: auto; */
-  margin-left: 0%;
-  /* margin-top: 3%; */
-  margin-top: 0%;
-  font-size: 100%;
+  border-radius: 100px;
+  border: 2px solid  rgba(52, 173, 249, 0.718) ;
+  /*background-color: rgb(255, 255, 255);
+  */background: rgb(252, 252, 244);
+  /*margin-right: auto;
+  */margin-left: 0%;
+  /*margin-top: 3%;
+  */margin-top: 0%;
+  font-size: 95%;
   padding: 1%;
   font-weight: 600;
-  /* margin-bottom: 0px; */
-  /* display: flex;*/
-  justify-content: center;
+  /*margin-bottom: 0px;
+  *//*display: flex;
+  */justify-content: center;
   align-items: center;
-
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
 }
 
 
 
 
 .respButton:hover,.respButton:focus, .respButton:active{
-transition: background-color 0.75s ease;
-transition: font-size 5s ease;
-background-color: rgb(238, 250, 255);
-/* font-size: 185%; */
-/* font-weight: 550; */
-/* color: rgb(25,25,112); */
-/* width: 50%; */
-
-border-radius: 60px; 
--webkit-border-radius: 50px;
--moz-border-radius: 10px;
--ms-border-radius: 10px;
--o-border-radius: 10px;
-transition-duration: 10s;
--webkit-transition-duration: 0s;
-  /* transform: perspective(1px) translateZ(0); */
--webkit-transform: scale(1.1);
-transform: scale(1.1);
-font-weight: 600;
+  transition: background-color 0.75s ease;
+  transition: font-size 5s ease;
+  background-color: rgb(238, 250, 255);
+  /*font-size: 185%;
+  *//*font-weight: 550;
+  *//*color: rgb(25,25,112);
+  *//*width: 50%;
+  */border-radius: 60px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition-duration: 10s;
+  -webkit-transition-duration: 0s;
+  /*transform: perspective(1px) translateZ(0);
+  */-webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  font-weight: 600;
+  -webkit-transition: background-color 0.75s ease;
+  -moz-transition: background-color 0.75s ease;
+  -ms-transition: background-color 0.75s ease;
+  -o-transition: background-color 0.75s ease;
 }
 
 .respButton:hover::after{

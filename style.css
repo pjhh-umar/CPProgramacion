@@ -722,6 +722,16 @@ tbody tr:nth-child(odd) {
 .three-column { columns: 3; }
 .two-column { columns: 2; }
 
+/* Listas mejoradas */
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
 /* Listas */
 ol li::marker {
   font-weight: bold; 
@@ -804,5 +814,55 @@ ol li::marker {
   .respButton,
   .show-all-btn {
     width: 90%;
+  }
+}
+
+
+strong, b {
+  font-weight: 600;
+}
+
+/* Media Queries para dispositivos */
+@media (max-width: 992px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .titulo {
+    font-size: 1.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 13px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+  }
+  
+  /* Ajustar cajas para móviles */
+  .info-box, .nota-box, .ejercicio-box {
+    width: 95%;
+    padding: 1rem;
   }
 }

@@ -115,6 +115,7 @@ width: 100%;
 
 .informacion_profesor{
   display: flex;
+  /* font-size: 100%; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -132,83 +133,58 @@ width: 100%;
 
 
 /* for top menu */
-
-.main-header{
+.main-header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
   width: 100%;
-  margin-bottom: 0%;
-  /* margin-top: -7.5%; */
-  }
+  margin-bottom: 0;
+  /* Puedes ajustar margin-top si es necesario */
+}
 
+.small-nav {
+  padding: 10px;
+}
 
- 
-.small-nav{
-    padding:10px;
-  }
-
-.top-nav{
-text-align:center; 
-padding: 1%;
-width: auto;
+.top-nav {
+  text-align: center;
+  padding: 1%;
+  font-size: 115%;
 }
 
 .top-nav ul {
-  margin-top: 0%;
-  margin-bottom: 0.5%;
-  padding: .65%; 
+  margin: 0 0 0.5% 0;
+  padding: 0.65%;
   border-radius: 25px;
-  /* background-color: rgba(109, 195, 248, 0.747); */
-  /* background-color:  rgba(218, 165, 32, 0.841); */
   background-color: rgb(228, 255, 255);
   width: 100%;
 }
 
-.top-nav li{
-  padding: 1.75%; 
+.top-nav li {
   display: inline;
-  color: #ffffff;
-  width: 100%;
+  padding: 1.75%;
 }
 
-.top-nav a{
-  padding: .5%; 
+.top-nav a {
+  display: inline-block;
+  padding: 0.5%;
   font-size: 115%;
   font-weight: 800;
   text-decoration: none;
-  /* color: rgb(25,25,112); */
-  /* color: rgb(0,124,191);  */
-  
-  /* color: rgb(219,75,67); */
-  /* color: rgb(3,66,139);  */
-  color: rgb(25,25,112);
-  /* font-family: system-ui; */
-  font-family: 'IM Fell English';
-  /* color:  rgb(0, 0, 0); */
-  width: 100%;
+  color: rgb(25, 25, 112);
+  font-family: 'IM Fell English', serif;
 }
 
-.top-nav a:hover{
-  transition: background-color 0.75s ease;
-  /* transition: font-size 0.75s ease; */
+.top-nav a:hover {
   background-color: rgb(211, 211, 211);
   font-size: 110%;
   font-weight: 400;
-  /* color: rgb(25,25,112); */
-  color: rgb(0,78,148);
+  color: rgb(0, 78, 148);
   border-radius: 10px;
-  width: 100%;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  -webkit-transition: font-size 0.75s ease;
-  -moz-transition: font-size 0.75s ease;
-  -ms-transition: font-size 0.75s ease;
-  -o-transition: font-size 0.75s ease;
+  transition: all 0.75s ease;
 }
+
 
 .small-nav button{
     padding: 15px;
@@ -317,7 +293,7 @@ width: auto;
 }
 
 .title_nombre{
-  font-size: 100%;
+  /* font-size: 100%; */
   /* padding: .8%; */
   font-weight: 800;
   font-family: 'IM Fell English', serif;
@@ -337,9 +313,9 @@ width: auto;
 
 
 .subtitle_nombre{
-  font-size: 100%;
+  /* font-size: 100%; */
   /* padding: 0.15%; */
-  font-weight: 800;
+  /* font-weight: 800; */
   /* font-family: 'IM Fell English', serif; */
   font-family: 'Shippori Mincho B1', serif;
   margin-bottom: 0%;
@@ -1397,11 +1373,11 @@ tbody tr:nth-child(odd) {
   background-color: rgb(196, 231, 255);
 }
 
-
+/* 
 @media (max-width: 600px) 
   th, td {
       font-size: 14px;
-  }
+  } */
 
 .four-column{
   columns: 4;
@@ -1417,6 +1393,22 @@ tbody tr:nth-child(odd) {
 .two-column{
   columns: 2;
   /*grid-template-columns: repeat(2, 1fr);*/
+}
+
+
+/* ---------- DISEÑO RESPONSIVO ---------- */
+
+@media screen and (max-width: 600px) {
+  .tabla_ejercicios,
+  .respuesta,
+  .respuesta-container {
+    width: 100%;
+  }
+
+  .respButton,
+  .show-all-btn {
+    width: 90%;
+  }
 }
 
 

@@ -822,47 +822,47 @@ strong, b {
   font-weight: 600;
 }
 
-/* Media Queries para dispositivos */
-@media (max-width: 992px) {
-  html {
-    font-size: 15px;
-  }
-}
+/* Container */
 
-@media (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
-  
-  .title {
-    font-size: 1.75rem;
-  }
-  
-  .titulo {
-    font-size: 1.5rem;
-  }
-  
-  .subtitle {
-    font-size: 1.25rem;
-  }
-}
+	.container {
+		margin: 0 auto;
+		max-width: 100%;
+		width: 1200px;
+	}
 
-@media (max-width: 576px) {
-  html {
-    font-size: 13px;
-  }
-  
-  h1 {
-    font-size: 1.5rem;
-  }
-  
-  h2 {
-    font-size: 1.25rem;
-  }
-  
-  /* Ajustar cajas para móviles */
-  .info-box, .nota-box, .ejercicio-box {
-    width: 95%;
-    padding: 1rem;
-  }
-}
+		@media screen and (max-width: 1680px) {
+
+			.container {
+				width: 1200px;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.container {
+				width: calc(100% - 40px);
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.container {
+				width: calc(100% - 50px);
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.container {
+				width: calc(100% - 40px);
+			}
+			.himg {
+			    display:hidden;
+	    height:40px;
+	    margin-bottom:-10px;
+	}
+
+		}

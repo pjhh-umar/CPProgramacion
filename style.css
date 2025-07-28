@@ -226,6 +226,30 @@ width: 100%;
   line-height: 1.5em;
 }
 
+.titulo{
+  font-size: 170%;
+  font-weight: 600;
+  margin-top: 0%;
+  margin-bottom: 5%;
+  padding: 1%;
+  content:" ";
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  /* font-style: normal; */
+  /* font-family: "Muli"; */
+  /* font-family: 'Pangolin', cursive; */
+  /* font-family: 'Cabin Sketch', cursive; */
+  /* "Montagu Slab", serif; */
+  /* "Vast Shadow", serif; */
+  /* "Wellfleet", monospace; */
+  /* 'Hina Mincho', serif; */
+  /* font-family: 'Jacques Francois Shadow', cursive; */
+  
+  /* color: rgb(0, 77, 179); */
+  color: rgb(3, 89, 165); 
+  display: inline;
+}
+
 .subtitle{
   font-size: 150%;
   font-weight: 600; 
@@ -488,14 +512,14 @@ body.card{
           }
 
 h1.page-title{
-  font-size: 140%;
+  font-size: 150%;
   text-align: center;
   /* font-family: "Muli"; */
   font-family: 'Gelasio', serif;
   /* font-family: 'IM Fell English', serif; */
   /* content:" "; */
   margin-top: 1%;
-  margin-bottom: 0.25%;
+  margin-bottom: 0%;
   padding: 0%;
   width: 100%;
   /* color: rgba(255, 0, 0, 0.789); */
@@ -745,11 +769,12 @@ h1.number-title-practica::after{
     background: rgb(252, 252, 244);
     color: black;
     border-radius: 20px;
-    padding: 50px;
+    padding: 20px;
     border: 0px solid  rgb(218,165,32);
     margin: auto; 
-    margin-top: 50px;
-    font-size: 20px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-size: 100%;
     width: 85%;
     box-shadow: 0px 0px 10px 0px  rgb(218,165,32);
     text-align: justify;

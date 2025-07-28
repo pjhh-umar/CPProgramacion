@@ -46,32 +46,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap'); /*font-family: "Nanum Pen Script", cursive;*/
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Base mejorada para responsive */
-:root {
-  --font-base: 1rem;
-  --line-height: 1.4;
-  --color-primary: rgb(3, 89, 165);
-  --color-secondary: rgb(173, 113, 43);
-  --color-text: rgb(0, 0, 0);
-  --color-bg: rgb(252, 252, 244);
-}
 /* Reset y estilos base */
 
-
 html {
-  font-size: 16px; /* Base para rem */
+  font-size: 16px; /* Establece un tamaño base consistente */
 }
 
 body {
+  font-size: 1rem; /* Usa unidades rem para escalamiento consistente */
   margin-top: 0.25%;
   font-family: "Bitter", serif;
   font-optical-sizing: auto;
+  line-height: 1.4em;
   font-weight: 400;
-  font-style: normal;
-  font-size: var(--font-base);
-  line-height: var(--line-height);
-  color: var(--color-text);
 }
+
+/* html, body {
+  margin-top: 0.25%;
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  line-height: 1.4em;
+  font-weight: 400;
+  font-size: 100%;
+  font-style: normal;
+} */
 
 /* Fondos */
 .fondo-body {

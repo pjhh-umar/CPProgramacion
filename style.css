@@ -45,16 +45,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Macondo&'); /*font-family: "Macondo", cursive;*/
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap'); /*font-family: "Nanum Pen Script", cursive;*/
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Reset y estilos base */
-html, body {
+
+html {
+  font-size: 16px; /* Establece un tamaño base consistente */
+}
+
+body {
+  font-size: 1rem; /* Usa unidades rem para escalamiento consistente */
   margin-top: 0.25%;
   font-family: "Bitter", serif;
   font-optical-sizing: auto;
   line-height: 1.4em;
   font-weight: 400;
-  font-size: 100%;
   font-style: normal;
 }
+
 
 /* Fondos */
 .fondo-body {
@@ -239,6 +246,8 @@ html, body {
   align-items: center;
 }
 
+
+
 /* Títulos con numeración */
 h1.title { font-size: 170%; font-family: 'EB Garamond', serif; color: rgb(3, 89, 165); margin: 0 0 3.5% 0; }
 h2.title { font-size: 160%; font-family: 'Hina Mincho', serif; color: rgb(3, 89, 165); margin: 2.5% 0 3.5% 0; }
@@ -411,14 +420,16 @@ h1.number-title-practica::after {
   background: rgb(252, 252, 244);
   display: flex;
   flex-direction: column;
-  margin: 50px auto 2.5% auto;
+  margin: 2% auto 5% auto;
   width: 90%;
   align-items: center;
   justify-content: space-evenly;
 }
 
 .links-box a { 
-  padding: 10px;
+  font-size: 125%;
+  padding: 0px;
+  margin: 10px auto 10px auto;
   font-weight: 500;
   color: rgb(255, 0, 0); 
 }
